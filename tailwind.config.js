@@ -8,9 +8,16 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        background: "var(--background)",
-        foreground: "var(--foreground)",
+        'coal': '#1B1717',
+        'darkRuby': '#842828',
+        'ruby': '#C93030',
+        'snow': '#E5E5E5',
+        'soot': '#5D5D5D',
+        'charcoal': '#393939'
       },
+      fontFamily:{
+        'notoSerif':['var(--font-notoSerif)']
+      }
     },
   },
   plugins: [],
