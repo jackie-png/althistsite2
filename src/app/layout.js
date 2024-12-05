@@ -1,6 +1,7 @@
 import localFont from "next/font/local";
 import "./globals.css";
 import {Noto_Serif} from 'next/font/google'
+import Navbar from "./scomponents/Navbar";
 
 const notoSerif = Noto_Serif({
   subsets:['latin'],
@@ -10,10 +11,11 @@ const notoSerif = Noto_Serif({
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en">
+    <html lang="en" className="bg-snow">
       <body
         className={`${notoSerif.variable} font-notoSerif`}
       >
+        <Navbar/>
         {children}
       </body>
     </html>
