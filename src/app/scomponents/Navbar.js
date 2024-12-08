@@ -1,5 +1,5 @@
 "use client"
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faEmpire } from "@fortawesome/free-brands-svg-icons";
 import { faChevronDown, faChevronUp } from "@fortawesome/free-solid-svg-icons";
@@ -9,8 +9,36 @@ export default function Navbar(){
     const [timelineOpen, setTimelineOpen] = useState(false)
     const [dropdownOpen, setDropdown] = useState(false)
     const [peaceOpen, setPeaceOpen] = useState(false)
+    const [menuOption, setMenuOption] = useState([false,false]) // timeline dropdown or peace treaty dropdown
+
+    useEffect(()=>{
+        console.log(`dropdown: ${dropdownOpen}`);
+        console.log(`timeline: ${menuOption[0]}`);
+        console.log(`peace: ${menuOption[1]}`);
+    },[dropdownOpen, menuOption])
+
+    useEffect(()=>{
+        if (!menuOption[0] && !menuOption[1]){
+            setDropdown(false);
+        } else {
+            setDropdown(true);
+        }
+    },[menuOption])
+
+    function handleDropdownOpen(whichOpened){
+        let newOption = [...menuOption];
+        if (whichOpened === 0){
+            newOption[0] = !newOption[0]
+            newOption[1] = false
+        } else {
+            newOption[0] = false
+            newOption[1] = !newOption[1]
+        }
+        setMenuOption(newOption);
+
+    }
     return(
-        <div className={`bg-coal text-snow ${dropdownOpen ? timelineOpen ? "h-[293px]" : peaceOpen ? "h-[438px]" : "h-[293px]" : "h-24"} flex flex-col px-4 pt-4`}>
+        <div className={`bg-coal text-snow relative z-50 ${dropdownOpen ? menuOption[0] ? "h-[293px]" : menuOption[1] ? "h-[438px]" : "h-[293px]" : "h-24"} flex flex-col px-4 pt-4`}>
             {/**upper navbar */}
             <div className="flex items-center gap-8">
                 <div className="h-16 w-16 flex items-center justify-center">
@@ -21,26 +49,18 @@ export default function Navbar(){
                 </div>
                 <div className={`gap-8 h-16 flex flex-grow border-solid border-2 border-soot rounded items-center justify-center select-none`}>
                     <div 
-                        className={`${timelineOpen ? "bg-ruby" : "bg-none"} flex gap-2 px-2 border-solid border-2 ${timelineOpen ? "border-darkRuby" : "border-soot"} rounded h-9 items-center justify-center hover:border-ruby hover:cursor-pointer`}
-                        onClick={()=>{
-                            setTimelineOpen(!timelineOpen);
-                            setPeaceOpen(false);
-                            setDropdown(!dropdownOpen);
-                             }}>
+                        className={`${menuOption[0] ? "bg-ruby" : "bg-none"} flex gap-2 px-2 border-solid border-2 ${menuOption[0] ? "border-darkRuby" : "border-soot"} rounded h-9 items-center justify-center hover:border-ruby hover:cursor-pointer`}
+                        onClick={()=>handleDropdownOpen(0)}>
                         <h2>Timeline</h2>
-                        <div className={`flex justify-center items-center w-5 h-5 ${timelineOpen ? "text-snow" : "text-ruby"}`}>
+                        <div className={`flex justify-center items-center w-5 h-5 ${menuOption[0] ? "text-snow" : "text-ruby"}`}>
                             <FontAwesomeIcon icon={faChevronDown}/>
                         </div>
                     </div>
                     <div 
-                        className={`${peaceOpen ? "bg-ruby" : "bg-none"} flex gap-2 px-2 border-solid border-2 ${peaceOpen ? "border-darkRuby" : "border-soot"} rounded h-9 items-center justify-center select-none hover:border-ruby hover:cursor-pointer`} 
-                        onClick={()=>{
-                            setPeaceOpen(!peaceOpen);
-                            setTimelineOpen(false);
-                            setDropdown(!dropdownOpen);
-                             }}>
+                        className={`${menuOption[1] ? "bg-ruby" : "bg-none"} flex gap-2 px-2 border-solid border-2 ${menuOption[1] ? "border-darkRuby" : "border-soot"} rounded h-9 items-center justify-center select-none hover:border-ruby hover:cursor-pointer`} 
+                        onClick={()=>handleDropdownOpen(1)}>
                         <h2>Peace Treaties</h2>
-                        <div className={`flex justify-center items-center w-5 h-5 ${peaceOpen ? "text-snow" : "text-ruby"}`}>
+                        <div className={`flex justify-center items-center w-5 h-5 ${menuOption[1] ? "text-snow" : "text-ruby"}`}>
                             <FontAwesomeIcon icon={faChevronDown}/>
                         </div>
                     </div>
@@ -50,7 +70,7 @@ export default function Navbar(){
             {/**dropdown*/}
             {dropdownOpen && 
             <div className="h-full p-4">
-                {timelineOpen && 
+                {menuOption[0] && 
                     <div className="relative">
                         <div className="h-4 bg-ruby w-full relative top-20"></div>
                         <div className="flex text-coal text-xl font-bold justify-between relative z-10 top-10">
@@ -69,7 +89,7 @@ export default function Navbar(){
                         </div>                        
                     </div>
                 }
-                {peaceOpen && 
+                {menuOption[1] && 
                     <div className="h-full grid grid-cols-12">
                         <div className="col-span-5 text-xl flex flex-col items-center gap-8 justify-center">
                             <div 

@@ -15,7 +15,9 @@ export default function RootLayout({ children }) {
       <body
         className={`${notoSerif.variable} font-notoSerif`}
       >
-        <Navbar/>
+        <div className="sticky top-0 z-50">
+          <Navbar/>
+        </div>
         {children}
       </body>
     </html>
