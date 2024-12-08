@@ -13,7 +13,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en" className="bg-snow">
       <body
-        className={`${notoSerif.variable} font-notoSerif`}
+        className={`${notoSerif.variable} font-notoSerif relative`}
       >
         <div className="sticky top-0 z-50">
           <Navbar/>
