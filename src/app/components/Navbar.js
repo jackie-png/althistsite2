@@ -4,6 +4,8 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faEmpire } from "@fortawesome/free-brands-svg-icons";
 import { faChevronDown, faChevronUp } from "@fortawesome/free-solid-svg-icons";
 import { motion } from "framer-motion";
+import { TimelineCircle } from "./TimelineCircle";
+import { TimelineTriangle } from "./TimelineTriangle";
 
 export default function Navbar(){
     const [timelineOpen, setTimelineOpen] = useState(false)
@@ -75,30 +77,80 @@ export default function Navbar(){
             <div className={`absolute w-full ${menuOption[0] ? "h-56" : menuOption[1] ? "h-[342px]" : "h-0"} bg-coal p-4`}>
                 {menuOption[0] && 
                     <div className="relative">
-                        <div className="flex text-snow justify-center">
+                        <motion.div 
+                            initial={{scale:0}}
+                            animate={{scale:1}}
+                            transition={{
+                                duration: 0.3
+                            }}
+                            className="flex text-snow justify-center">
                             <div className="border-soot border-2 border-solid py-2 px-8 rounded text-2xl">
                                 <h2>Timeline of Major Years</h2>
                             </div>
-                        </div>
-                        <div className="h-4 bg-ruby w-full ml-2 relative top-20"></div>
+                        </motion.div>
+                        <motion.div 
+                            initial={{width:"0%"}}
+                            animate={{width:"95%"}}
+                            transition={{
+                                duration: 0.5,
+                                delay: 0.3
+                            }}
+                            className="h-4 bg-ruby ml-2 relative top-20">
+                        </motion.div>
                         <div className="flex text-coal text-xl font-bold justify-between relative z-10 top-8">
-                            <div className="flex justify-center items-center w-20 h-20 bg-ruby rounded-full">
-                                <div className="bg-white w-10 h-10 rounded-full">
-
-                                </div>
+                            <div className="flex justify-center items-center w-20 h-20">
+                                <TimelineCircle/>
                             </div>
-                            <div className="flex justify-center items-center bg-white border-ruby border-[10px] rounded-md w-32 py-1">
+                            <motion.div 
+                                initial={{opacity:0, y: -30}}
+                                animate={{opacity:1, y: 0}}
+                                transition={{
+                                    delay: 0.7,
+                                    duration: 0.5
+                                }}
+                                className="flex justify-center items-center h-16 bg-white border-ruby border-[10px] rounded-md w-32 py-1">
                                 <h2>1936</h2>
-                            </div>
-                            <div className="flex justify-center items-center bg-white border-ruby border-[10px] rounded-md w-32 py-1">
+                            </motion.div>
+                            <motion.div 
+                                initial={{opacity:0, y: -30}}
+                                animate={{opacity:1, y: 0}}
+                                transition={{
+                                    delay: 0.9,
+                                    duration: 0.5
+                                }}
+                                className="flex justify-center items-center h-16 bg-white border-ruby border-[10px] rounded-md w-32 py-1">
                                 <h2>1940</h2>
-                            </div>
-                            <div className="flex justify-center items-center bg-white border-ruby border-[10px] rounded-md w-32 py-1">
+                            </motion.div>
+                            <motion.div
+                                initial={{opacity:0, y: -30}}
+                                animate={{opacity:1, y: 0}}
+                                transition={{
+                                    delay: 1.1,
+                                    duration: 0.5
+                                }}
+                                className="flex justify-center items-center h-16 bg-white border-ruby border-[10px] rounded-md w-32 py-1">
                                 <h2>1944</h2>
-                            </div>
-                            <div className="flex justify-center items-center bg-white border-ruby border-[10px] rounded-md w-32 py-1">
+                            </motion.div>
+                            <motion.div
+                                initial={{opacity:0, y: -30}}
+                                animate={{opacity:1, y: 0}}
+                                transition={{
+                                    delay: 1.4,
+                                    duration: 0.5
+                                }}
+                                className="flex justify-center items-center h-16 bg-white border-ruby border-[10px] rounded-md w-32 py-1">
                                 <h2>1948</h2>
-                            </div>
+                            </motion.div>
+                            <motion.div 
+                                initial={{opacity:0, translateX: -50}}
+                                animate={{opacity:1, translateX: 0}}
+                                transition={{
+                                    delay: 0.4,
+                                    duration: 0.5
+                                }}
+                                className="w-32 h-32">
+                                <TimelineTriangle/>
+                            </motion.div>
                         </div>                        
                     </div>
                 }
