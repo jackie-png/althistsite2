@@ -15,6 +15,7 @@ const SvgComponent = (props) => (
         animate={{scale:[0,1.05,1]}}
         transition={{
             duration: 0.5,
+            delay:0.3,
             ease:"easeInOut"
         }}
         >

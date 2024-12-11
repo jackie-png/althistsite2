@@ -3,7 +3,7 @@ import React, { useEffect, useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faEmpire } from "@fortawesome/free-brands-svg-icons";
 import { faChevronDown, faChevronUp } from "@fortawesome/free-solid-svg-icons";
-import { motion } from "framer-motion";
+import { AnimatePresence, motion } from "framer-motion";
 import { TimelineCircle } from "./TimelineCircle";
 import { TimelineTriangle } from "./TimelineTriangle";
 
@@ -71,122 +71,170 @@ export default function Navbar(){
 
                 </div>                
             </div>
+            <AnimatePresence>
+                {/**dropdown*/}
+                {dropdownOpen && 
+                <motion.div 
+                    initial={{height:"0px", opacity:0}}
+                    animate={{height:(menuOption[0] ? "224px" : menuOption[1] ? "342px" : "0px"), opacity: 1}}
+                    exit={{
+                        height:"0px",
+                        opacity: 0
+                    }}
+                    transition={{
+                        duration:0.3,
+                        ease:"easeInOut",
+                    }}
+                    className={`absolute w-full bg-coal p-4`}>
+                    {menuOption[0] && 
+                        <motion.div 
+                            className="relative">
+                            <motion.div 
+                                initial={{scale:0}}
+                                animate={{scale:1}}
+                                transition={{
+                                    duration: 0.3,
+                                    delay: 0.3
+                                }}
+                                className="flex text-snow justify-center">
+                                <div className="border-soot border-2 border-solid py-2 px-8 rounded text-2xl">
+                                    <h2>Timeline of Major Years</h2>
+                                </div>
+                            </motion.div>
+                            <motion.div 
+                                initial={{width:"0%"}}
+                                animate={{width:"95%"}}
+                                transition={{
+                                    duration: 0.5,
+                                    delay: 0.6
+                                }}
+                                className="h-4 bg-ruby ml-2 relative top-20">
+                            </motion.div>
+                            <div className="flex text-coal text-xl font-bold justify-between relative z-10 top-8">
+                                <div className="flex justify-center items-center w-20 h-20">
+                                    <TimelineCircle/>
+                                </div>
+                                <motion.div 
+                                    initial={{opacity:0, y: -30}}
+                                    animate={{opacity:1, y: 0}}
+                                    transition={{
+                                        delay: 0.7,
+                                        duration: 0.5
+                                    }}
+                                    className="flex justify-center items-center h-16 bg-white border-ruby border-[10px] rounded-md w-32 py-1">
+                                    <h2>1936</h2>
+                                </motion.div>
+                                <motion.div 
+                                    initial={{opacity:0, y: -30}}
+                                    animate={{opacity:1, y: 0}}
+                                    transition={{
+                                        delay: 0.8,
+                                        duration: 0.5
+                                    }}
+                                    className="flex justify-center items-center h-16 bg-white border-ruby border-[10px] rounded-md w-32 py-1">
+                                    <h2>1940</h2>
+                                </motion.div>
+                                <motion.div
+                                    initial={{opacity:0, y: -30}}
+                                    animate={{opacity:1, y: 0}}
+                                    transition={{
+                                        delay: 0.9,
+                                        duration: 0.5
+                                    }}
+                                    className="flex justify-center items-center h-16 bg-white border-ruby border-[10px] rounded-md w-32 py-1">
+                                    <h2>1944</h2>
+                                </motion.div>
+                                <motion.div
+                                    initial={{opacity:0, y: -30}}
+                                    animate={{opacity:1, y: 0}}
+                                    transition={{
+                                        delay: 1,
+                                        duration: 0.5
+                                    }}
+                                    className="flex justify-center items-center h-16 bg-white border-ruby border-[10px] rounded-md w-32 py-1">
+                                    <h2>1948</h2>
+                                </motion.div>
+                                <motion.div 
+                                    initial={{opacity:0, translateX: -50}}
+                                    animate={{opacity:1, translateX: 0}}
+                                    transition={{
+                                        delay: 0.7,
+                                        duration: 0.5
+                                    }}
+                                    className="w-32 h-32">
+                                    <TimelineTriangle/>
+                                </motion.div>
+                            </div>                        
+                        </motion.div>
+                    }    
+                    {menuOption[1] && 
+                        <div className="h-full grid grid-cols-12 text-white">
+                            <div className="col-span-5 text-xl flex flex-col items-center gap-8 justify-center">
+                                <motion.div 
+                                    initial={{opacity:0, x: -50}}
+                                    animate={{opacity:1, x:0}}
+                                    transition={{
+                                        duration: 0.3,
+                                        ease:"easeInOut",
+                                        delay: 0.5
+                                    }}
+                                    className={`${timelineOpen ? "bg-ruby" : "bg-none"} w-64 flex gap-2 px-2 border-solid border-2 ${timelineOpen ? "border-darkRuby" : "border-soot"} rounded h-9 items-center justify-center hover:border-ruby hover:cursor-pointer`}>
+                                    <h2>Europe and Africa</h2>
+                                </motion.div>
+                                <motion.div 
+                                    initial={{opacity:0, x: -50}}
+                                    animate={{opacity:1, x:0}}
+                                    transition={{
+                                        duration: 0.3,
+                                        ease:"easeInOut",
+                                        delay: 0.6
+                                    }}
+                                    className={`${timelineOpen ? "bg-ruby" : "bg-none"} w-64 flex gap-2 px-2 border-solid border-2 ${timelineOpen ? "border-darkRuby" : "border-soot"} rounded h-9 items-center justify-center hover:border-ruby hover:cursor-pointer`}>
+                                    <h2>South and East Asia</h2>
+                                </motion.div>
+                                <motion.div
+                                    initial={{opacity:0, x: -50}}
+                                    animate={{opacity:1, x:0}}
+                                    transition={{
+                                        duration: 0.3,
+                                        ease:"easeInOut",
+                                        delay: 0.7
+                                    }}
+                                    className={`${timelineOpen ? "bg-ruby" : "bg-none"} w-64 flex gap-2 px-2 border-solid border-2 ${timelineOpen ? "border-darkRuby" : "border-soot"} rounded h-9 items-center justify-center hover:border-ruby hover:cursor-pointer`}>
+                                    <h2>North America</h2>
+                                </motion.div>
+                            </div>
+                            <div className="flex justify-center">
+                                <motion.div 
+                                    initial={{height:"0%"}}
+                                    animate={{height:"100%"}}
+                                    transition={{duration: 0.3, delay: 0.3}}
+                                    className="bg-soot w-1 h-full rounded">
 
-            {/**dropdown*/}
-            {dropdownOpen && 
-            <div className={`absolute w-full ${menuOption[0] ? "h-56" : menuOption[1] ? "h-[342px]" : "h-0"} bg-coal p-4`}>
-                {menuOption[0] && 
-                    <div className="relative">
-                        <motion.div 
-                            initial={{scale:0}}
-                            animate={{scale:1}}
-                            transition={{
-                                duration: 0.3
-                            }}
-                            className="flex text-snow justify-center">
-                            <div className="border-soot border-2 border-solid py-2 px-8 rounded text-2xl">
-                                <h2>Timeline of Major Years</h2>
+                                </motion.div>
                             </div>
-                        </motion.div>
-                        <motion.div 
-                            initial={{width:"0%"}}
-                            animate={{width:"95%"}}
-                            transition={{
-                                duration: 0.5,
-                                delay: 0.3
-                            }}
-                            className="h-4 bg-ruby ml-2 relative top-20">
-                        </motion.div>
-                        <div className="flex text-coal text-xl font-bold justify-between relative z-10 top-8">
-                            <div className="flex justify-center items-center w-20 h-20">
-                                <TimelineCircle/>
-                            </div>
-                            <motion.div 
-                                initial={{opacity:0, y: -30}}
-                                animate={{opacity:1, y: 0}}
-                                transition={{
-                                    delay: 0.7,
-                                    duration: 0.5
-                                }}
-                                className="flex justify-center items-center h-16 bg-white border-ruby border-[10px] rounded-md w-32 py-1">
-                                <h2>1936</h2>
-                            </motion.div>
-                            <motion.div 
-                                initial={{opacity:0, y: -30}}
-                                animate={{opacity:1, y: 0}}
-                                transition={{
-                                    delay: 0.9,
-                                    duration: 0.5
-                                }}
-                                className="flex justify-center items-center h-16 bg-white border-ruby border-[10px] rounded-md w-32 py-1">
-                                <h2>1940</h2>
-                            </motion.div>
                             <motion.div
-                                initial={{opacity:0, y: -30}}
-                                animate={{opacity:1, y: 0}}
+                                initial={{opacity: 0}}
+                                animate={{opacity: 1}}
                                 transition={{
-                                    delay: 1.1,
-                                    duration: 0.5
+                                    duration: 0.5,
+                                    delay: 0.5
                                 }}
-                                className="flex justify-center items-center h-16 bg-white border-ruby border-[10px] rounded-md w-32 py-1">
-                                <h2>1944</h2>
-                            </motion.div>
-                            <motion.div
-                                initial={{opacity:0, y: -30}}
-                                animate={{opacity:1, y: 0}}
-                                transition={{
-                                    delay: 1.4,
-                                    duration: 0.5
-                                }}
-                                className="flex justify-center items-center h-16 bg-white border-ruby border-[10px] rounded-md w-32 py-1">
-                                <h2>1948</h2>
-                            </motion.div>
-                            <motion.div 
-                                initial={{opacity:0, translateX: -50}}
-                                animate={{opacity:1, translateX: 0}}
-                                transition={{
-                                    delay: 0.4,
-                                    duration: 0.5
-                                }}
-                                className="w-32 h-32">
-                                <TimelineTriangle/>
-                            </motion.div>
-                        </div>                        
-                    </div>
-                }
-                {menuOption[1] && 
-                    <div className="h-full grid grid-cols-12 text-white">
-                        <div className="col-span-5 text-xl flex flex-col items-center gap-8 justify-center">
-                            <div 
-                                className={`${timelineOpen ? "bg-ruby" : "bg-none"} w-64 flex gap-2 px-2 border-solid border-2 ${timelineOpen ? "border-darkRuby" : "border-soot"} rounded h-9 items-center justify-center hover:border-ruby hover:cursor-pointer`}>
-                                <h2>Europe and Africa</h2>
-                            </div>
-                            <div 
-                                className={`${timelineOpen ? "bg-ruby" : "bg-none"} w-64 flex gap-2 px-2 border-solid border-2 ${timelineOpen ? "border-darkRuby" : "border-soot"} rounded h-9 items-center justify-center hover:border-ruby hover:cursor-pointer`}>
-                                <h2>South and East Asia</h2>
-                            </div>
-                            <div 
-                                className={`${timelineOpen ? "bg-ruby" : "bg-none"} w-64 flex gap-2 px-2 border-solid border-2 ${timelineOpen ? "border-darkRuby" : "border-soot"} rounded h-9 items-center justify-center hover:border-ruby hover:cursor-pointer`}>
+                                className="col-span-6 h-5/6 border-solid border-ruby border-2 rounded flex self-center items-center justify-center flex-col">
                                 <h2>North America</h2>
-                            </div>
-                        </div>
-                        <div className="flex justify-center">
-                            <div className="bg-soot w-1 h-full rounded">
+                                <h2>North America</h2>
+                                <h2>North America</h2>
+                                <h2>North America</h2>
+                                <h2>North America</h2>
 
-                            </div>
-                        </div>
-                        <div className="col-span-6 h-5/6 border-solid border-ruby border-2 rounded flex self-center items-center justify-center flex-col">
-                            <h2>North America</h2>
-                            <h2>North America</h2>
-                            <h2>North America</h2>
-                            <h2>North America</h2>
-                            <h2>North America</h2>
+                            </motion.div>
 
                         </div>
+                    }  
 
-                    </div>
-                }
-            </div>}
+                </motion.div>}                
+            </AnimatePresence>
+
         </div>
     )
 }
