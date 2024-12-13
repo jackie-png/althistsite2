@@ -11,9 +11,9 @@ const notoSerif = Noto_Serif({
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en" className="bg-snow">
+    <html lang="en" className="bg-snow m-0 p-0 box-border overflow-x-hidden">
       <body
-        className={`${notoSerif.variable} font-notoSerif relative`}
+        className={`${notoSerif.variable} font-notoSerif relative m-0 p-0 box-border overflow-x-hidden`}
       >
         <div className="sticky top-0 z-50">
           <Navbar/>

@@ -6,6 +6,7 @@ import { faChevronDown, faChevronUp } from "@fortawesome/free-solid-svg-icons";
 import { AnimatePresence, motion } from "framer-motion";
 import { TimelineCircle } from "./TimelineCircle";
 import { TimelineTriangle } from "./TimelineTriangle";
+import { SelectableCountries } from "./SelectableCountries";
 
 export default function Navbar(){
     const [timelineOpen, setTimelineOpen] = useState(false)
