@@ -41,7 +41,7 @@ export default function Navbar(){
 
     }
     return(
-        <div>            
+        <div className="sticky top-0 z-50">            
             {/**upper navbar */}
             <div className={`bg-coal text-snow relative z-50 flex flex-col px-4 py-6 ${dropdownOpen ? "border-b-2" : ""} border-solid border-soot`}>
                 <div className="flex items-center gap-8">
