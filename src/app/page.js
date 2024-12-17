@@ -5,6 +5,9 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faEmpire } from "@fortawesome/free-brands-svg-icons";
 import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
 import { useState } from "react";
+import { AnimatePresence } from "framer-motion";
+import { motion } from "framer-motion";
+import LandingTimelineSection from "./components/LandingTimelineSection";
 
 export default function Home() {
 
@@ -21,17 +24,30 @@ export default function Home() {
           <div className="text-[290px] row-span-2 justify-self-center">
             <FontAwesomeIcon icon={faEmpire} size="lg"/>            
           </div>
-          { !aboutSelected && <div className="text-7xl font-bold select-none justify-self-center justify-center text-center self-center">
-            <h1>Rise of the German Hegemony</h1>
-          </div>}
-          { aboutSelected && 
-            <div className="bg-coal flex flex-col row-span-1 w-9/12 h-full bg-opacity-50 rounded self-center gap-4 justify-self-center px-8 py-4">
-              <h1 className="text-2xl font-bold text-center">About this website</h1>
-              <h3 className="mb-4 text-lg">This was a Hearts of Iron IV campaign that I enjoyed a lot so I turned it into a website and documented it like a history website in this world</h3>
-              <h3 className="text-lg">The campaign took place in the mod Kaiserreich which explores a world built on the premise of “What if Germany won World War 1?”. When the devs updated the German focus tree I had such a fun time conquering the world, so much that this was made as a memento.</h3>
-            </div>
-          
-          }
+
+          <AnimatePresence>
+            { aboutSelected ? 
+              <motion.div
+              initial={{opacity: 0}}
+              animate={{opacity: 1}}
+              transition={{duration: 0.2}}
+              exit={{opacity: 0}}                className="bg-coal flex flex-col row-span-1 w-9/12 h-full bg-opacity-50 rounded self-center gap-4 justify-self-center px-8 py-4">
+                <h1 className="text-2xl font-bold text-center">About this website</h1>
+                <h3 className="mb-4 text-lg">This was a Hearts of Iron IV campaign that I enjoyed a lot so I turned it into a website and documented it like a history website in this world</h3>
+                <h3 className="text-lg">The campaign took place in the mod Kaiserreich which explores a world built on the premise of “What if Germany won World War 1?”. When the devs updated the German focus tree I had such a fun time conquering the world, so much that this was made as a memento.</h3>
+              </motion.div>
+              :
+              <motion.div
+              initial={{opacity: 0}}
+              animate={{opacity: 1}}
+              transition={{duration: 0.2}}
+              exit={{opacity: 0}}
+              className="text-7xl font-bold select-none justify-self-center justify-center text-center self-center">
+              <h1>Rise of the German Hegemony</h1>
+            </motion.div>
+            }            
+          </AnimatePresence>
+
 
           <div>
             <button className="flex justify-self-center self-center text-lg items-center gap-2 bg-ruby py-2 px-4 rounded transition-all duration-200 hover:bg-darkRuby active:scale-90"
@@ -44,9 +60,10 @@ export default function Home() {
 
 
       </div>
-
-
-
+      <div className="flex justify-center items-center bg-darkRuby h-32 text-6xl font-bold ">
+        <h1 className="border py-4 px-8 tracking-wider rounded">Timeline of Events</h1>
+      </div>
+      <LandingTimelineSection/>
     </div>
   );
 }
