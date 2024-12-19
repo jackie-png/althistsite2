@@ -7,13 +7,14 @@ import { AnimatePresence, motion } from "framer-motion";
 import { TimelineCircle } from "./TimelineCircle";
 import { TimelineTriangle } from "./TimelineTriangle";
 import { SelectableCountries } from "./SelectableCountries";
+import { useRouter } from "next/navigation";
 
 export default function Navbar(){
     const [timelineOpen, setTimelineOpen] = useState(false)
     const [dropdownOpen, setDropdown] = useState(false)
     const [peaceOpen, setPeaceOpen] = useState(false)
     const [menuOption, setMenuOption] = useState([false,false]) // timeline dropdown or peace treaty dropdown
-
+    const router = useRouter();
     useEffect(()=>{
         console.log(`dropdown: ${dropdownOpen}`);
         console.log(`timeline: ${menuOption[0]}`);
@@ -45,7 +46,7 @@ export default function Navbar(){
             {/**upper navbar */}
             <div className={`bg-coal text-snow relative z-50 flex flex-col px-4 py-6 ${dropdownOpen ? "border-b-2" : ""} border-solid border-soot`}>
                 <div className="flex items-center gap-8">
-                    <div className="h-16 w-16 flex items-center justify-center">
+                    <div className="h-16 w-16 flex items-center justify-center cursor-pointer" onClick={()=>router.push("/")}>
                         <FontAwesomeIcon icon={faEmpire} size="4x"/>
                     </div>
                     <div className="flex items-center justify-center border-solid border-2 border-soot rounded h-14 px-4 ">

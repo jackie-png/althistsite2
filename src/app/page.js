@@ -63,7 +63,13 @@ export default function Home() {
       <div className="flex justify-center items-center bg-darkRuby h-32 text-6xl font-bold ">
         <h1 className="border py-4 px-8 tracking-wider rounded">Timeline of Events</h1>
       </div>
-      <LandingTimelineSection/>
+      <LandingTimelineSection title={"The State of the World"} year={"1936"} link={"/articles/1936-1940"}/>
+      <LandingTimelineSection title={"A Clash Between Hammers and Claws"} year={"1940"} link={"/articles/1940-1944"}/>
+
+      <LandingTimelineSection title={"The War Beyond Europe"} year={"1944"} link={"/articles/1944-1948"}/>
+
+      <LandingTimelineSection title={"The Eagle Reigns Supreme"} year={"1948"} link={"/articles/1948-1951"}/>
+
     </div>
   );
 }
