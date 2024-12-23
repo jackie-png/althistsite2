@@ -23,6 +23,35 @@ export default function Home() {
 
   }
 
+  const CustomButtongroup = ({next, previous, goToSlide, currentSlide}) =>{
+    console.log(currentSlide)
+    return(
+      <div className="absolute flex top-0 justify-evenly w-full text-black bg-coal py-4">
+        <div className="cursor-pointer flex justify-center items-center w-28 h-28 bg-ruby rounded-full" onClick={()=>goToSlide(0)}>
+          <div className="cursor-pointer flex justify-center items-center w-20 h-20 bg-white rounded-full text-center font-bold">1936</div>
+        </div>
+        <div className="cursor-pointer flex justify-center items-center w-28 h-28 bg-ruby rounded-full" onClick={()=>goToSlide(1)}>
+          <div className="cursor-pointer flex justify-center items-center w-20 h-20 bg-white rounded-full text-center font-bold">1940</div>
+        </div>
+        <div className="cursor-pointer flex justify-center items-center w-28 h-28 bg-ruby rounded-full" onClick={()=>goToSlide(2)}>
+          <div className="cursor-pointer flex justify-center items-center w-20 h-20 bg-white rounded-full text-center font-bold">1944</div>
+        </div>
+        <div className="cursor-pointer flex justify-center items-center w-28 h-28 bg-ruby rounded-full" onClick={()=>goToSlide(3)}>
+          <div className="cursor-pointer flex justify-center items-center w-20 h-20 bg-white rounded-full text-center font-bold">1948</div>
+        </div>
+      </div>
+    )
+  }
+
+  const CustomRightArrow = ({onClick, ...rest}) =>{
+    console.log(rest)
+    return(
+      <div className="bg-red w-4 h-4 absolute" onClick={()=>onClick()}>
+        right
+      </div>
+    )
+  }
+
   return (
     <div className="min-h-screen text-snow">
       <div 
@@ -76,7 +105,10 @@ export default function Home() {
 
       <Carousel 
         responsive={responsive}
-        sliderClass="bg-green-500 flex justify-center"
+        sliderClass="bg-green-500 flex justify-center top-20"
+        containerClass="h-screen"
+        customButtonGroup={<CustomButtongroup/>}
+        customRightArrow={<CustomRightArrow/>}
         >
         <LandingTimelineSection title={"The State of the World"} year={"1936"} link={"/articles/1936-1940"}/>
         <LandingTimelineSection title={"A Clash Between Hammers and Claws"} year={"1940"} link={"/articles/1940-1944"}/>
