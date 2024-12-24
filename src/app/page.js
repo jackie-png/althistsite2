@@ -4,8 +4,8 @@ import Navbar from "./components/Navbar";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faEmpire } from "@fortawesome/free-brands-svg-icons";
 import { faArrowRight, faChevronRight, faChevronLeft } from "@fortawesome/free-solid-svg-icons";
-import { useState } from "react";
-import { AnimatePresence } from "framer-motion";
+import { useEffect, useRef, useState } from "react";
+import { AnimatePresence, keyframes, useInView } from "framer-motion";
 import { motion } from "framer-motion";
 import LandingTimelineSection from "./components/LandingTimelineSection";
 import Carousel from "react-multi-carousel";
@@ -14,6 +14,8 @@ import "react-multi-carousel/lib/styles.css"
 export default function Home() {
 
   const [aboutSelected, setAbout] = useState(false)
+  const timelineRef = useRef()
+  const timelineInView = useInView(timelineRef, {amount: 0.5, once: true})
   const responsive = {
     superLargeDesktop: {
       // the naming can be any, depends on you.
@@ -23,42 +25,105 @@ export default function Home() {
 
   }
 
+  useEffect(()=>{
+    console.log(timelineInView)
+  },[timelineInView])
+
   const CustomButtongroup = ({next, previous, goToSlide, carouselState}) =>{
     console.log(carouselState.currentSlide)
     let width
     switch (carouselState.currentSlide) {
       case 0:
-        width="w-2/12"
+        width="16%"
         break;
       case 1:
-        width="w-5/12"
+        width="41%"
         break;
       case 2:
-        width="w-7/12"
+        width="60%"
         break;
       case 3:
-        width="w-10/12"
+        width="83%"
         break;
       default:
-        width="w-10/12"
+        width="83%"
         break;
     }
     return(
       <div className="absolute top-0 w-full h-48 text-black bg-coal ">
-        <motion.div className={`transition-all duration-500 ease-in-out rounded-r-full ${width} bg-ruby h-6 relative z-0 top-1/2`}>
+        <motion.div 
+          initial={{width: "0%"}}
+          animate={{width: width}}
+          transition={{
+            ease: "easeInOut",
+            duration: 0.5
+          }}
+          className={` rounded-r-full bg-ruby h-6 relative z-0 top-1/2`}>
 
         </motion.div>
         <div className="flex justify-evenly z-20 relative top-7">
-          <motion.div className="cursor-pointer flex justify-center items-center w-28 h-28 bg-ruby rounded-full transition-all duration-300 hover:scale-110" onClick={()=>goToSlide(0)}>
+          <motion.div 
+            initial={{scale: 0}}
+            animate={{
+              scale: (timelineInView ? 1 : [0])
+            }}
+            whileHover={{
+              scale: 1.2,
+            }}
+            transition={{
+              type: keyframes,
+              duration: 0.3,
+              ease:"easeOut"
+            }}
+            className="cursor-pointer flex justify-center items-center w-28 h-28 bg-ruby rounded-full shadow-2xl" onClick={()=>goToSlide(0)}>
             <div className="cursor-pointer flex justify-center items-center w-20 h-20 bg-white rounded-full text-center font-bold select-none">1936</div>
           </motion.div>
-          <motion.div className="cursor-pointer flex justify-center items-center w-28 h-28 bg-ruby rounded-full transition-all duration-300 hover:scale-110" onClick={()=>goToSlide(1)}>
+          <motion.div 
+            initial={{scale: 0}}
+            animate={{
+              scale: (timelineInView ? 1 : [0])
+            }}
+            whileHover={{
+              scale: 1.2,
+            }}
+            transition={{
+              type: keyframes,
+              duration: 0.3,
+              ease:"easeOut"
+            }}
+            className="cursor-pointer flex justify-center items-center w-28 h-28 bg-ruby rounded-full shadow-2xl" onClick={()=>goToSlide(1)}>
             <div className="cursor-pointer flex justify-center items-center w-20 h-20 bg-white rounded-full text-center font-bold select-none">1940</div>
           </motion.div>
-          <motion.div className="cursor-pointer flex justify-center items-center w-28 h-28 bg-ruby rounded-full transition-all duration-300 hover:scale-110" onClick={()=>goToSlide(2)}>
+          <motion.div
+            initial={{scale: 0}}
+            animate={{
+              scale: (timelineInView ? 1 : [0])
+            }}
+            whileHover={{
+              scale: 1.2,
+            }}
+            transition={{
+              type: keyframes,
+              duration: 0.3,
+              ease:"easeOut"
+            }}
+            className="cursor-pointer flex justify-center items-center w-28 h-28 bg-ruby rounded-full shadow-2xl" onClick={()=>goToSlide(2)}>
             <div className="cursor-pointer flex justify-center items-center w-20 h-20 bg-white rounded-full text-center font-bold select-none">1944</div>
           </motion.div>
-          <motion.div className="cursor-pointer flex justify-center items-center w-28 h-28 bg-ruby rounded-full transition-all duration-300 hover:scale-110" onClick={()=>goToSlide(3)}>
+          <motion.div
+            initial={{scale: 0}}
+            animate={{
+              scale: (timelineInView ? 1 : [0])
+            }}
+            whileHover={{
+              scale: 1.2,
+            }}
+            transition={{
+              type: keyframes,
+              duration: 0.3,
+              ease:"easeOut"
+            }}
+            className="cursor-pointer flex justify-center items-center w-28 h-28 bg-ruby rounded-full shadow-2xl" onClick={()=>goToSlide(3)}>
             <div className="cursor-pointer flex justify-center items-center w-20 h-20 bg-white rounded-full text-center font-bold select-none">1948</div>
           </motion.div>          
         </div>
@@ -131,7 +196,8 @@ export default function Home() {
 
 
       </div>
-      <div className="flex justify-center items-center bg-darkRuby h-32 text-6xl font-bold ">
+      <div className="flex justify-center items-center bg-darkRuby h-32 text-6xl font-bold " ref={timelineRef}
+      >
         <h1 className="border py-4 px-8 tracking-wider rounded">Timeline of Events</h1>
       </div>
 
