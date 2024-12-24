@@ -3,7 +3,7 @@ import Image from "next/image";
 import Navbar from "./components/Navbar";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faEmpire } from "@fortawesome/free-brands-svg-icons";
-import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
+import { faArrowRight, faChevronRight, faChevronLeft } from "@fortawesome/free-solid-svg-icons";
 import { useState } from "react";
 import { AnimatePresence } from "framer-motion";
 import { motion } from "framer-motion";
@@ -23,31 +23,63 @@ export default function Home() {
 
   }
 
-  const CustomButtongroup = ({next, previous, goToSlide, currentSlide}) =>{
-    console.log(currentSlide)
+  const CustomButtongroup = ({next, previous, goToSlide, carouselState}) =>{
+    console.log(carouselState.currentSlide)
+    let width
+    switch (carouselState.currentSlide) {
+      case 0:
+        width="w-2/12"
+        break;
+      case 1:
+        width="w-5/12"
+        break;
+      case 2:
+        width="w-7/12"
+        break;
+      case 3:
+        width="w-10/12"
+        break;
+      default:
+        width="w-10/12"
+        break;
+    }
     return(
-      <div className="absolute flex top-0 justify-evenly w-full text-black bg-coal py-4">
-        <div className="cursor-pointer flex justify-center items-center w-28 h-28 bg-ruby rounded-full" onClick={()=>goToSlide(0)}>
-          <div className="cursor-pointer flex justify-center items-center w-20 h-20 bg-white rounded-full text-center font-bold">1936</div>
+      <div className="absolute top-0 w-full h-48 text-black bg-coal ">
+        <div className={`transition-all duration-500 ease-in-out rounded-r-full ${width} bg-ruby h-6 relative z-0 top-1/2`}>
+
         </div>
-        <div className="cursor-pointer flex justify-center items-center w-28 h-28 bg-ruby rounded-full" onClick={()=>goToSlide(1)}>
-          <div className="cursor-pointer flex justify-center items-center w-20 h-20 bg-white rounded-full text-center font-bold">1940</div>
+        <div className="flex justify-evenly z-20 relative top-7">
+          <div className="cursor-pointer flex justify-center items-center w-28 h-28 bg-ruby rounded-full transition-all duration-300 hover:scale-110" onClick={()=>goToSlide(0)}>
+            <div className="cursor-pointer flex justify-center items-center w-20 h-20 bg-white rounded-full text-center font-bold select-none">1936</div>
+          </div>
+          <div className="cursor-pointer flex justify-center items-center w-28 h-28 bg-ruby rounded-full transition-all duration-300 hover:scale-110" onClick={()=>goToSlide(1)}>
+            <div className="cursor-pointer flex justify-center items-center w-20 h-20 bg-white rounded-full text-center font-bold select-none">1940</div>
+          </div>
+          <div className="cursor-pointer flex justify-center items-center w-28 h-28 bg-ruby rounded-full transition-all duration-300 hover:scale-110" onClick={()=>goToSlide(2)}>
+            <div className="cursor-pointer flex justify-center items-center w-20 h-20 bg-white rounded-full text-center font-bold select-none">1944</div>
+          </div>
+          <div className="cursor-pointer flex justify-center items-center w-28 h-28 bg-ruby rounded-full transition-all duration-300 hover:scale-110" onClick={()=>goToSlide(3)}>
+            <div className="cursor-pointer flex justify-center items-center w-20 h-20 bg-white rounded-full text-center font-bold select-none">1948</div>
+          </div>          
         </div>
-        <div className="cursor-pointer flex justify-center items-center w-28 h-28 bg-ruby rounded-full" onClick={()=>goToSlide(2)}>
-          <div className="cursor-pointer flex justify-center items-center w-20 h-20 bg-white rounded-full text-center font-bold">1944</div>
-        </div>
-        <div className="cursor-pointer flex justify-center items-center w-28 h-28 bg-ruby rounded-full" onClick={()=>goToSlide(3)}>
-          <div className="cursor-pointer flex justify-center items-center w-20 h-20 bg-white rounded-full text-center font-bold">1948</div>
-        </div>
+
       </div>
     )
   }
 
   const CustomRightArrow = ({onClick, ...rest}) =>{
+    return(
+      <div className="w-10 h-10 text-xl text-white absolute right-10 cursor-pointer transition-all scale-100 duration-500 hover:scale-125 hover:text-ruby" onClick={()=>onClick()}>
+        <FontAwesomeIcon icon={faChevronRight} size="2xl"/>
+      </div>
+    )
+  }
+
+  const CustomLeftArrow = ({onClick, ...rest}) =>{
     console.log(rest)
     return(
-      <div className="bg-red w-4 h-4 absolute" onClick={()=>onClick()}>
-        right
+      <div className="w-10 h-10 text-xl text-white absolute left-10 cursor-pointer transition-all scale-100 duration-500 hover:scale-125 hover:text-ruby" onClick={()=>onClick()}>
+        <FontAwesomeIcon icon={faChevronLeft} size="2xl"/>
       </div>
     )
   }
@@ -109,6 +141,7 @@ export default function Home() {
         containerClass="h-screen"
         customButtonGroup={<CustomButtongroup/>}
         customRightArrow={<CustomRightArrow/>}
+        customLeftArrow={<CustomLeftArrow/>}
         >
         <LandingTimelineSection title={"The State of the World"} year={"1936"} link={"/articles/1936-1940"}/>
         <LandingTimelineSection title={"A Clash Between Hammers and Claws"} year={"1940"} link={"/articles/1940-1944"}/>
