@@ -45,22 +45,22 @@ export default function Home() {
     }
     return(
       <div className="absolute top-0 w-full h-48 text-black bg-coal ">
-        <div className={`transition-all duration-500 ease-in-out rounded-r-full ${width} bg-ruby h-6 relative z-0 top-1/2`}>
+        <motion.div className={`transition-all duration-500 ease-in-out rounded-r-full ${width} bg-ruby h-6 relative z-0 top-1/2`}>
 
-        </div>
+        </motion.div>
         <div className="flex justify-evenly z-20 relative top-7">
-          <div className="cursor-pointer flex justify-center items-center w-28 h-28 bg-ruby rounded-full transition-all duration-300 hover:scale-110" onClick={()=>goToSlide(0)}>
+          <motion.div className="cursor-pointer flex justify-center items-center w-28 h-28 bg-ruby rounded-full transition-all duration-300 hover:scale-110" onClick={()=>goToSlide(0)}>
             <div className="cursor-pointer flex justify-center items-center w-20 h-20 bg-white rounded-full text-center font-bold select-none">1936</div>
-          </div>
-          <div className="cursor-pointer flex justify-center items-center w-28 h-28 bg-ruby rounded-full transition-all duration-300 hover:scale-110" onClick={()=>goToSlide(1)}>
+          </motion.div>
+          <motion.div className="cursor-pointer flex justify-center items-center w-28 h-28 bg-ruby rounded-full transition-all duration-300 hover:scale-110" onClick={()=>goToSlide(1)}>
             <div className="cursor-pointer flex justify-center items-center w-20 h-20 bg-white rounded-full text-center font-bold select-none">1940</div>
-          </div>
-          <div className="cursor-pointer flex justify-center items-center w-28 h-28 bg-ruby rounded-full transition-all duration-300 hover:scale-110" onClick={()=>goToSlide(2)}>
+          </motion.div>
+          <motion.div className="cursor-pointer flex justify-center items-center w-28 h-28 bg-ruby rounded-full transition-all duration-300 hover:scale-110" onClick={()=>goToSlide(2)}>
             <div className="cursor-pointer flex justify-center items-center w-20 h-20 bg-white rounded-full text-center font-bold select-none">1944</div>
-          </div>
-          <div className="cursor-pointer flex justify-center items-center w-28 h-28 bg-ruby rounded-full transition-all duration-300 hover:scale-110" onClick={()=>goToSlide(3)}>
+          </motion.div>
+          <motion.div className="cursor-pointer flex justify-center items-center w-28 h-28 bg-ruby rounded-full transition-all duration-300 hover:scale-110" onClick={()=>goToSlide(3)}>
             <div className="cursor-pointer flex justify-center items-center w-20 h-20 bg-white rounded-full text-center font-bold select-none">1948</div>
-          </div>          
+          </motion.div>          
         </div>
 
       </div>
