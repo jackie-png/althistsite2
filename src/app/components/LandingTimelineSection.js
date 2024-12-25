@@ -1,16 +1,39 @@
 "use client"
-import React, { useRef } from "react"
-import { motion, useInView, useScroll } from "framer-motion"
+import React, { useEffect, useRef } from "react"
+import { animate, motion, useInView, useMotionValue, useTransform} from "framer-motion"
 import { useRouter } from "next/navigation";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
-export default function LandingTimelineSection({title, year, link}){
+
+export default function LandingTimelineSection({title, year, link, backgroundImage, isInView}){
     const router = useRouter();
+    const titleCount = useMotionValue(0);
+    const sectionRef = useRef();
+    const sectionInView = useInView(sectionRef, {amount: 1});
+    const roundedtitle = useTransform(titleCount, (latest)=> Math.round(latest));
+    const displayedTitle = useTransform(roundedtitle, (latest) => title.slice(0,latest))
+    useEffect(()=>{
+        if (isInView) {
+            const controls = animate(titleCount, title.length, {
+                type: "tween",
+                duration: 1,
+                ease: "easeInOut"
+            })
+            return controls.stop            
+        }
+
+    },[])
+
+    useEffect(()=>{
+        console.log(`${title} : ${isInView}`)
+    },[isInView])
+
+
     return(
-        <div className="w-screen bg-charcoal roundeds">
-            <div className="w-full h-[30rem] bg-white mb-3 bg-center rounded-t bg-no-repeat bg-cover" style={{backgroundImage: `url("/images/treatyLondon.jpg")`}}>
+        <div className={`w-screen ${isInView ? "bg-charcoal" : "bg-slate-100"}`} ref={sectionRef}>
+            <div className="w-full h-[30rem] bg-white mb-3 bg-center rounded-t bg-no-repeat bg-cover" style={{backgroundImage: `url(${backgroundImage})`}}>
                 <div className="w-full h-full bg-black bg-opacity-20 rounded-t flex flex-col justify-center items-center select-none gap-4">
-                    <h1 className="text-5xl underline font-bold tracking-wider">{title}</h1>
+                    <motion.span className="text-5xl underline font-bold tracking-wider">{displayedTitle}</motion.span>
                     <h1 className="text-5xl underline font-bold tracking-wider">{year}</h1>
                 </div>
             </div>

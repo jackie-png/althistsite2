@@ -15,7 +15,8 @@ export default function Home() {
 
   const [aboutSelected, setAbout] = useState(false)
   const timelineRef = useRef()
-  const timelineInView = useInView(timelineRef, {amount: 0.5, once: true})
+  const timelineInView = useInView(timelineRef, {amount: 1, once: true})
+  const [slideInView, setSlideInView] = useState([false,false,false,false])
   const responsive = {
     superLargeDesktop: {
       // the naming can be any, depends on you.
@@ -26,6 +27,7 @@ export default function Home() {
   }
 
   useEffect(()=>{
+    setSlideInView([true,false,false,false])
     console.log(timelineInView)
   },[timelineInView])
 
@@ -149,6 +151,15 @@ export default function Home() {
     )
   }
 
+  function handleBeforeChange(nextSlide){
+    const newArr = [false,false,false,false]
+    newArr[nextSlide] = true
+    console.log(newArr)
+    setSlideInView(newArr);
+  }
+
+  
+
   return (
     <div className="min-h-screen text-snow">
       <div 
@@ -209,10 +220,10 @@ export default function Home() {
         customRightArrow={<CustomRightArrow/>}
         customLeftArrow={<CustomLeftArrow/>}
         >
-        <LandingTimelineSection title={"The State of the World"} year={"1936"} link={"/articles/1936-1940"}/>
-        <LandingTimelineSection title={"A Clash Between Hammers and Claws"} year={"1940"} link={"/articles/1940-1944"}/>
-        <LandingTimelineSection title={"The War Beyond Europe"} year={"1944"} link={"/articles/1944-1948"}/>
-        <LandingTimelineSection title={"The Eagle Reigns Supreme"} year={"1948"} link={"/articles/1948-1951"}/>
+        <LandingTimelineSection title={"The State of the World"} year={"1936"} link={"/articles/1936-1940"} backgroundImage={"/images/treatyParis_France.jpg"} isInView={slideInView}/>
+        <LandingTimelineSection title={"A Clash Between Hammers and Claws"} year={"1940"} link={"/articles/1940-1944"} backgroundImage={"/images/treatyLondon.jpg"} isInView={slideInView}/>
+        <LandingTimelineSection title={"The War Beyond Europe"} year={"1944"} link={"/articles/1944-1948"} backgroundImage={"/images/russia.png"} isInView={slideInView}/>
+        <LandingTimelineSection title={"The Eagle Reigns Supreme"} year={"1948"} link={"/articles/1948-1951"} backgroundImage={"/images/northAmerica.png"} isInView={slideInView}/>
 
       </Carousel>
 
