@@ -16,7 +16,9 @@ export default function Home() {
   const [aboutSelected, setAbout] = useState(false)
   const timelineRef = useRef()
   const timelineInView = useInView(timelineRef, {amount: 1, once: true})
-  const [slideInView, setSlideInView] = useState([false,false,false,false])
+  const slideInView = useRef([false,false,false,false])
+  const [slidesInView, setView] = useState([false,false,false,false])
+
   const responsive = {
     superLargeDesktop: {
       // the naming can be any, depends on you.
@@ -27,7 +29,8 @@ export default function Home() {
   }
 
   useEffect(()=>{
-    setSlideInView([true,false,false,false])
+    // slideInView.current=[true,false,false,false]
+    setView([true,false,false,false])
     console.log(timelineInView)
   },[timelineInView])
 
@@ -60,7 +63,7 @@ export default function Home() {
             ease: "easeInOut",
             duration: 0.5
           }}
-          className={` rounded-r-full bg-ruby h-6 relative z-0 top-1/2`}>
+          className={` rounded-r-full bg-darkRuby h-6 relative z-0 top-1/2`}>
 
         </motion.div>
         <div className="flex justify-evenly z-20 relative top-7">
@@ -136,7 +139,7 @@ export default function Home() {
 
   const CustomRightArrow = ({onClick, ...rest}) =>{
     return(
-      <div className="w-10 h-10 text-xl text-white absolute right-10 cursor-pointer transition-all scale-100 duration-500 hover:scale-125 hover:text-ruby" onClick={()=>onClick()}>
+      <div className="w-16 h-16 rounded-xl flex justify-center items-center text-xl text-white bg-charcoal bg-opacity-80 absolute right-10 cursor-pointer transition-all scale-100 duration-500 hover:scale-110 hover:text-ruby" onClick={()=>onClick()}>
         <FontAwesomeIcon icon={faChevronRight} size="2xl"/>
       </div>
     )
@@ -145,18 +148,12 @@ export default function Home() {
   const CustomLeftArrow = ({onClick, ...rest}) =>{
     console.log(rest)
     return(
-      <div className="w-10 h-10 text-xl text-white absolute left-10 cursor-pointer transition-all scale-100 duration-500 hover:scale-125 hover:text-ruby" onClick={()=>onClick()}>
+      <div className="w-16 h-16 rounded-xl flex justify-center items-center text-xl text-white bg-charcoal bg-opacity-80 absolute left-10 cursor-pointer transition-all scale-100 duration-500 hover:scale-110 hover:text-ruby" onClick={()=>onClick()}>
         <FontAwesomeIcon icon={faChevronLeft} size="2xl"/>
       </div>
     )
   }
 
-  function handleBeforeChange(nextSlide){
-    const newArr = [false,false,false,false]
-    newArr[nextSlide] = true
-    console.log(newArr)
-    setSlideInView(newArr);
-  }
 
   
 
@@ -220,10 +217,10 @@ export default function Home() {
         customRightArrow={<CustomRightArrow/>}
         customLeftArrow={<CustomLeftArrow/>}
         >
-        <LandingTimelineSection title={"The State of the World"} year={"1936"} link={"/articles/1936-1940"} backgroundImage={"/images/treatyParis_France.jpg"} isInView={slideInView}/>
-        <LandingTimelineSection title={"A Clash Between Hammers and Claws"} year={"1940"} link={"/articles/1940-1944"} backgroundImage={"/images/treatyLondon.jpg"} isInView={slideInView}/>
-        <LandingTimelineSection title={"The War Beyond Europe"} year={"1944"} link={"/articles/1944-1948"} backgroundImage={"/images/russia.png"} isInView={slideInView}/>
-        <LandingTimelineSection title={"The Eagle Reigns Supreme"} year={"1948"} link={"/articles/1948-1951"} backgroundImage={"/images/northAmerica.png"} isInView={slideInView}/>
+        <LandingTimelineSection title={"The State of the World"} year={"1936"} link={"/articles/1936-1940"} backgroundImage={"/images/treatyParis_France.jpg"} isInView={slidesInView}/>
+        <LandingTimelineSection title={"A Clash Between Hammers and Claws"} year={"1940"} link={"/articles/1940-1944"} backgroundImage={"/images/treatyLondon.jpg"} isInView={slidesInView}/>
+        <LandingTimelineSection title={"The War Beyond Europe"} year={"1944"} link={"/articles/1944-1948"} backgroundImage={"/images/russia.png"} isInView={slidesInView}/>
+        <LandingTimelineSection title={"The Eagle Reigns Supreme"} year={"1948"} link={"/articles/1948-1951"} backgroundImage={"/images/northAmerica.png"} isInView={slidesInView}/>
 
       </Carousel>
 
