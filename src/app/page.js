@@ -10,6 +10,7 @@ import { motion } from "framer-motion";
 import LandingTimelineSection from "./components/LandingTimelineSection";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css"
+import { useRouter } from "next/navigation";
 
 export default function Home() {
 
@@ -18,6 +19,7 @@ export default function Home() {
   const timelineInView = useInView(timelineRef, {amount: 1, once: true})
   const slideInView = useRef([false,false,false,false])
   const [slidesInView, setView] = useState([false,false,false,false])
+  const router = useRouter()
 
   const responsive = {
     superLargeDesktop: {
@@ -58,13 +60,21 @@ export default function Home() {
       <div className="absolute top-0 w-full h-48 text-black bg-coal ">
         <motion.div 
           initial={{width: "0%"}}
+          animate={{width: "83%"}}
+          transition={{
+            ease: "easeInOut",
+            duration: 0.5
+          }}
+          className={` rounded-r-full border-ruby border-2 h-6 absolute z-0 top-[4.5rem]`}>
+        </motion.div>
+        <motion.div 
+          initial={{width: "0%"}}
           animate={{width: width}}
           transition={{
             ease: "easeInOut",
             duration: 0.5
           }}
-          className={` rounded-r-full bg-darkRuby h-6 relative z-0 top-1/2`}>
-
+          className={` rounded-r-full bg-darkRuby h-6 absolute z-10 top-[4.5rem]`}>
         </motion.div>
         <div className="flex justify-evenly z-20 relative top-7">
           <motion.div 
@@ -223,6 +233,39 @@ export default function Home() {
         <LandingTimelineSection title={"The Eagle Reigns Supreme"} year={"1948"} link={"/articles/1948-1951"} backgroundImage={"/images/northAmerica.png"} isInView={slidesInView}/>
 
       </Carousel>
+
+      <div className="flex justify-center items-center bg-darkRuby h-32 text-6xl font-bold mt-8" ref={timelineRef}
+      >
+        <h1 className="border py-4 px-8 tracking-wider rounded">Peace Treaties</h1>
+      </div>      
+      <div className="h-screen bg-charcoal w-screen grid grid-rows-1 grid-cols-2 px-4">
+        <div className="w-full flex justify-center items-center h-full">
+          <div className="relative w-full h-5/6 p-4 border-2 rounded">
+            <div className="relative w-full h-full rounded">
+              <Image
+                src={"/images/KRworld1951V2.png"}
+                fill={true}
+                alt="peace treaty image"
+                style={{objectFit: "cover", borderRadius: "4px"}}
+              />               
+            </div>            
+          </div>
+
+         
+
+        </div>
+        <div className="w-full h-full flex flex-col justify-center items-center gap-10 border-coal">
+            <div className="w-9/12 p-4 text-xl border-2 rounded">
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Diam quam nulla porttitor massa id neque aliquam. Integer malesuada nunc vel risus commodo viverra maecenas. Donec adipiscing tristique risus nec feugiat. Ornare massa eget egestas purus viverra accumsan. Vitae congue mauris rhoncus aenean. Enim eu turpis egestas pretium. Justo nec ultrices dui sapien eget mi proin. Purus ut faucibus pulvinar elementum integer. Massa sed elementum tempus egestas.</p>
+            </div>
+            <motion.div              
+              className="flex bg-ruby rounded items-center text-xl gap-2 px-4 py-2 duration-200 hover:scale-110 cursor-pointer" onClick={()=>router.push("/articles/peace-treaties")}
+              >
+                <h3 className="font-bold tracking-wide">Read More</h3>
+                <FontAwesomeIcon icon={faArrowRight}/>
+            </motion.div>
+        </div>
+      </div>
 
 
     </div>
