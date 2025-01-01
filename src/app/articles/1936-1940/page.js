@@ -1,4 +1,7 @@
+"use client"
 import React from "react";
+import { motion } from "framer-motion";
+import ApiComponent from "@/app/components/ApiComponent";
 
 export default function page(){
     return(
@@ -11,14 +14,21 @@ export default function page(){
                 }}>
                 <div 
                     className="flex justify-center items-center h-screen w-screen absolute top-0 bg-gradient-to-t from-coal from-25%">
-                    <div className="bg-coal bg-opacity-60 rounded border-t-soot border-r-soot border-l-soot border-t-2 border-l-2 border-r-2 text-snow flex items-center justify-center flex-col gap-4 h-1/2 w-1/2">
+                    <motion.div 
+                        initial={{opacity:0, y: 40}}
+                        animate={{opacity:1, y: 0}}
+                        transition={{
+                            duation: 2,
+                            ease: "easeInOut"
+                        }}
+                        className="bg-coal bg-opacity-60 rounded border-t-soot border-r-soot border-l-soot border-t-2 border-l-2 border-r-2 text-snow flex items-center justify-center flex-col gap-4 h-1/2 w-1/2">
                         <h1 className="text-9xl">1936-1940</h1>
                         <h2 className="text-6xl">The State of The World</h2>
-                    </div>
+                    </motion.div>
                 </div>
             </div>
             <div className="bg-snow w-9/12 h-full">
-                hi
+                <ApiComponent/>
             </div>
             <h1 className="text-white">hi</h1>
             <h1 className="text-white">hi</h1>
