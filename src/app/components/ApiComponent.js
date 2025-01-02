@@ -1,6 +1,6 @@
 export default function ApiComponent(){
     async function apiCall(){
-        const res = await fetch("http://localhost:3000/api/articles")
+        const res = await fetch("http://localhost:3000/api/articles/0")
         return res
     }
 
