@@ -115,10 +115,66 @@ const array = [
                 ]
             }            
         ]
-
-
     },
-    "hello there",
+    {
+        year: "1940",
+        sections:[
+            {
+                sectionName: "1940",
+                sectionHeaders:[
+                    {
+                        header:"The Spark of War",
+                        sectionBody:[
+                            "As 1940 began tensions between the Third Internationale and its rivals were at an all time high, Communard forces had been caught clashing with German forces at the border in Alsace, both the Canadian and French public have been pressuring the government to act ever since the Canadians have announced their preparations for an invasion of Britain, but in the end both sides refused to react first. Peace would not last long however, the Entante with the support of the public declared war on the Internationale on the 27th of July 1940. ",
+                            "Initially the German Empire was kept out of the war, but the German Government knew that it was matter of time before the Third Internationale took the war towards the Reichspakt, thus the government instructed the military high command to prepare for operation Schornhorst(find the name of the focus later). Internationale Intelligence managed to catch wind of the German government’s plan to strike first and thus decided to beat the Germans to the punch and began drafting an ultimatum. ",                            
+                        ]
+                    },
+                    {
+                        header:"The Second Weltkrieg",
+                        sectionBody:[
+                            "As 1940 began tensions between the Third Internationale and its rivals were at an all time high, Communard forces had been caught clashing with German forces at the border in Alsace, both the Canadian and French public have been pressuring the government to act ever since the Canadians have announced their preparations for an invasion of Britain, but in the end both sides refused to react first. Peace would not last long however, the Entante with the support of the public declared war on the Internationale on the 27th of July 1940. ",
+                            "Initially the German Empire was kept out of the war, but the German Government knew that it was matter of time before the Third Internationale took the war towards the Reichspakt, thus the government instructed the military high command to prepare for operation Schornhorst(find the name of the focus later). Internationale Intelligence managed to catch wind of the German government’s plan to strike first and thus decided to beat the Germans to the punch and began drafting an ultimatum. ",                            
+                            "War would soon spread to Eastern Europe as the Russian Republic gears up to intervene in the Second Weltkrieg against the Reichspakt. The Germans had already anticipated Russia’s entry into the war, sending over two armies to help guard the Ruthenian and Ukrainian borders of Russia. The Russians would enter the war on Novemeber 6th 1940 starting off a full offensive aiming to punch through Reichspakt lines. The defense was successful but the Russians had a surprise in store for the Austrians as the Belgrade Pact would be absorbed into the Moscow Accord, bringing Serbia and Greece into the war.",
+                            "As the fires of the Second Weltkrieg spread in Europe, the Japanese Empire in Asia saw an opportunity to expand their influence in the Pacific as German East Asia, despite having a large fleet of ships, still heavily relied on their overlords for support. Seeing the the German homeland is currently focused on the war in Europe, Japan would declare war on German East Asia in late November in hopes that the German Empire would not retaliate. The colony would request support from the German Empire but the Japanese were correct about their assumptions, the homeland would send a strong condemnation of Japan’s actions but were only able to offer material support in the form of weapons due to the distance as well as the situation threatening the homeland at that instance. ",
+                            "Without support from the German homeland, German East Asia would not last long, their navy was decimated by the Japanese Navy and Singapore would come under occupation by the end of the year. Yet the War in the Pacific did not end as the German Empire would vow to return to Asia in the future."
+                        ]
+                    },
+                    {
+                        header:"The Second Weltkrieg",
+                        sectionBody:[
+                            "As 1940 began tensions between the Third Internationale and its rivals were at an all time high, Communard forces had been caught clashing with German forces at the border in Alsace, both the Canadian and French public have been pressuring the government to act ever since the Canadians have announced their preparations for an invasion of Britain, but in the end both sides refused to react first. Peace would not last long however, the Entante with the support of the public declared war on the Internationale on the 27th of July 1940. ",
+                            "Initially the German Empire was kept out of the war, but the German Government knew that it was matter of time before the Third Internationale took the war towards the Reichspakt, thus the government instructed the military high command to prepare for operation Schornhorst(find the name of the focus later). Internationale Intelligence managed to catch wind of the German government’s plan to strike first and thus decided to beat the Germans to the punch and began drafting an ultimatum. ",                            
+                            "War would soon spread to Eastern Europe as the Russian Republic gears up to intervene in the Second Weltkrieg against the Reichspakt. The Germans had already anticipated Russia’s entry into the war, sending over two armies to help guard the Ruthenian and Ukrainian borders of Russia. The Russians would enter the war on Novemeber 6th 1940 starting off a full offensive aiming to punch through Reichspakt lines. The defense was successful but the Russians had a surprise in store for the Austrians as the Belgrade Pact would be absorbed into the Moscow Accord, bringing Serbia and Greece into the war.",
+                            "As the fires of the Second Weltkrieg spread in Europe, the Japanese Empire in Asia saw an opportunity to expand their influence in the Pacific as German East Asia, despite having a large fleet of ships, still heavily relied on their overlords for support. Seeing the the German homeland is currently focused on the war in Europe, Japan would declare war on German East Asia in late November in hopes that the German Empire would not retaliate. The colony would request support from the German Empire but the Japanese were correct about their assumptions, the homeland would send a strong condemnation of Japan’s actions but were only able to offer material support in the form of weapons due to the distance as well as the situation threatening the homeland at that instance. ",
+                            "Without support from the German homeland, German East Asia would not last long, their navy was decimated by the Japanese Navy and Singapore would come under occupation by the end of the year. Yet the War in the Pacific did not end as the German Empire would vow to return to Asia in the future."
+                        ]
+                    },
+                    {
+                        header:"The Halifax Conference",
+                        sectionBody:[
+                            "With the Germans and the Entante on the same side in this war, it was clear to both parties that it would be beneficial towards the war effort if they were to cooperate with each other. Thus during December of 1940, German Delegates were invited to Halifax to discuss the possibility of cooperating with the Entante. ",
+                            "The Conference opened up with recognition of the German colonial gains after the First Weltkrieg. These concessions notably include all British African territory apart from South Africa, French Indochina, Sri Lanka, British Malaya, and Madagascar.",
+                            "The second issue to bring up was with France, the French Exiles made their demands clear when they wanted to reclaim all core French territories, including Alsace Lorraine. The Germans made it clear that they were not giving up Alsace-Lorraine but made a counter-offer that in exchange for helping liberate the French homeland, France would join Mittleuropa.",
+                            "Unfortunately the French remained defiant to any subsequent offer the Germans made, seeing that no further progress was being made with the conference, the German delegates decided to leave the conference entirely, resulting in the failure of the Halifax conference. The Entante and Reichspakt would officially not cooperate with each other. "
+                        ]
+                    },
+                    {
+                        header:"Early German War Plans",
+                        sectionBody:[
+                            "The Western Front was the narrowest front of the war, with the declaration of neutrality from the Benelux Union the frontline only stretched from the Belgian border of Lorraine down to the Alpine border of Switzerland",
+                            "Thus the army was tasked to initially hold the border with the fortifications built in Lorraine, while the air force was tasked to clear the skies of enemy fighters and bombers to secure future air superiority for any future offensive operations",
+                            "With the entrance of Austria and the Donau-Adribund Alliance, a southern front opened consisting of Socialist Italy in the west as well as Serbia and Greece in the east (who are part of the Moscow accord)",
+                            "The German high command considered the Balkan nations to be the easiest nations to take out early on, this would allow the Austrians to redirect forces to other fronts and allow direct access to Ottoman and Iranian Oil fields, vital to keep the Air Force, Tank Corp, and German High Seas Fleet running at maximum efficiency.",
+                            "Thus with the importance of securing the flow of Oil, the German Army moved to take out the Balkan Front first.",
+                            "The eastern front was the largest front the Reichspakt had to cover, stretching from the Baltic Sea to the Black Sea the initial plan of action was to the border in White Ruthenia and the Baltic Duchy since fortifications had been built in preparation for such an event",
+                            "The southern part of the eastern front was left in the hands of primarily the Ukrainians and Austria as German forces risk letting go effective defenses if they chose to spread out across the wide front ",
+                            "The military high command deduced that the best course of action when fighting the Russian was to play the defensive game, allowing the Russian make the first move. Their goal was that if the defenses hold effectively, planning for the war effort can be used somewhere else, particularly in the West with the Internationale. When all other fronts have been dealt with the Eastern front could be dealt with swiftly."
+                        ]
+                    }
+                ]
+            },         
+        ]
+    },
     "hey there",
     "bye bye"
 ]
