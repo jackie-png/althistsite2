@@ -1,20 +1,20 @@
 import React from "react";
 
-async function apiCall(){
-    const res = await fetch("http://localhost:3000/api/articles/0");
-    const resObj = await res.json();
-    if (res.ok){
-        console.log(resObj)
-        return resObj
-    } else {
-        return null
+
+
+export default async function ApiComponent(index){
+
+    async function apiCall(index){
+        const res = await fetch(`http://localhost:3000/api/articles/${index}`);
+        const resObj = await res.json();
+        if (res.ok){
+            console.log(resObj)
+            return resObj
+        } else {
+            return null
+        }
     }
-}
-
-export default async function ApiComponent(){
-
-
-    const response = await apiCall()
+    const response = await apiCall(index)
     const articleData = response.message
     console.log(articleData)
     return(
