@@ -172,11 +172,315 @@ const array = [
                         ]
                     }
                 ]
-            },         
+            },
+            {
+                sectionName: "1941",
+                sectionHeaders: [
+                    {
+                        header:"The Balkan Front, the Empire’s first move",
+                        sectionBody:[
+                            "The German Balkan Army was created to fight in the Serbia, comprising of mainly an infantry army pulled from the Western front but included was the newly created German Tank Corp who’s objectives were to breakthrough the Serbian defensive lines on the Danube and Serbian border",
+                            "As January 1941 comes in, the offensive began with a quick and decisive breach of the Serbian river line. This breach was unexpected by the Serbians who quickly moved to secure the hole in their defensive as German tanks tried to exploit the breach. Serbian forces were unable to contain the breach and soon Belgrade was surrounded and captured on January 13 1941",
+                            "The rest of Serbia soon surrendered and the German Army quickly moved towards the Greek border. The surrender of Serbia caught the Greek army by surprise but they were able to move into defensible positions. The German Tank Corp was only able to capture a small part of the northern Greece before they had to stop due to mounting Greek resistance and overextension, having to wait for their supply lines to catch up.",
+
+                        ]
+                    },
+                    {
+                        header:"Romanian Intervention in the Balkans, May 1941",
+                        sectionBody:[
+                            "When the Second World War began, Romania didn’t initially enter the war despite having close relations with the Moscow accord",
+                            "However when the Austrian intervention occurred and fighting in the Balkan began, the Romanian government saw this as an opportunity to seize more land, particularly Austrian Transylvania, thus during the first few months into the German Offensive into the Balkan, a Romanian lead Transylvanian uprising took hold of all major supply lines and cities in Austrian Transylvania, officially marking Romania’s entry into the war but peculiarly never joined the Moscow Accord. ",
+                            "the Austrian garrison on the now old Romanian border were now effectively encircled, with Austrian high command scrambling to free the encircled divisions, too no avail. This also put the supply lines of the German forces in Greece in jeopardy as well as the forces allocated to the Balkan front were minimal, leaving no one to garrison occupied Serbia.",
+                            "The Romanian intervention turned out to be only a minor inconvenience as when Greece surrendered on April 17th 1941, German forces were redirected to Romanian, leading the the fall of Bucharest on August 19th 1941, concluding the Balkan Front"
+                        ]
+                    },
+                    {
+                        header:"The Western Offensive of 1941",
+                        sectionBody:[
+                            "After the Balkan front wrapped up, the Tank Corp was moved to the western front in preparation for an offensive into the commune of France, initially the Communard and British forces initiated an offensive into the German frontlines, however the offensive was a huge failure as they were unable to break through the border fortifications and thus decided to also play the defensive game. Thus the western front saw little to no action, until the start of the winter western offensive.",
+                            "Initial confidence in the offensive was high due to the successes seen in the Balkan front with the tank corp, war unpreparedness was resolved, the air force had cleared a significant number of enemy fighters, and the Internationale forces on the western front was looking sparser than it was months ago. Thus when December 1941 came around, the offensive began.",
+                            "The tanks were able to break through the Internationale’s defenses beginning to spread out to try an encircle the enemy front line by outflanking their retreat to the south, however near by communard reinforcements made that task impossible. the Internationale redirected forces from Italy to secure the breach, successfully blocking the Tank Corp from completing their encirclement. Thus the German Army was ordered to do advance across the entire frontline. With the full weight of the German army and supply problems on the frontlines the Internationale ordered its armies to evacuate the frontline at lorraine to a more defensable position near Verdun and Dijon. The German Army was unable to captialize on their retreat as the Internationale had meticulously planned its retreat to minimize chaos. ",
+                            "The frontlines solidified along a defensive line going from Dijon up to western Wallonia."
+                        ]
+                    },
+                    {
+                        header:"The Western Offensive of 1941",
+                        sectionBody:[
+                            "After the Balkan front wrapped up, the Tank Corp was moved to the western front in preparation for an offensive into the commune of France, initially the Communard and British forces initiated an offensive into the German frontlines, however the offensive was a huge failure as they were unable to break through the border fortifications and thus decided to also play the defensive game. Thus the western front saw little to no action, until the start of the winter western offensive.",
+                            "Initial confidence in the offensive was high due to the successes seen in the Balkan front with the tank corp, war unpreparedness was resolved, the air force had cleared a significant number of enemy fighters, and the Internationale forces on the western front was looking sparser than it was months ago. Thus when December 1941 came around, the offensive began.",
+                            "The tanks were able to break through the Internationale’s defenses beginning to spread out to try an encircle the enemy front line by outflanking their retreat to the south, however near by communard reinforcements made that task impossible. the Internationale redirected forces from Italy to secure the breach, successfully blocking the Tank Corp from completing their encirclement. Thus the German Army was ordered to do advance across the entire frontline. With the full weight of the German army and supply problems on the frontlines the Internationale ordered its armies to evacuate the frontline at lorraine to a more defensable position near Verdun and Dijon. The German Army was unable to captialize on their retreat as the Internationale had meticulously planned its retreat to minimize chaos. ",
+                            "The frontlines solidified along a defensive line going from Dijon up to western Wallonia."
+                        ]
+                    },
+                    {
+                        header:"Operation Red Flood, December 1941",
+                        sectionBody:[
+                            "Months before the German offensive into Communard France, the Internationale were preparing for a daring maneuver to cripple the German war industry. A British led naval invasion was planned to hit the coastal cities of Bremen and Wilhelmshaven with a push towards the Rhineland and into central Germany. In order for this operation to be successful the British need the German High command to be distracted by a major event. Thus as an effort to orchestrate a German Offensive, Communard France was instructed to pull back troops from the from the frontlines to give the appearance of a thin defense.",
+                            "The French were initially skeptical of this plan, arguing that the Germans would not fall for such an easy deception, yet complied with Britain’s request as the Communard intelligence predicts that an incoming German offensive was soon to be initiated. When January 1941 rolled around the promised German invasion was underway, giving the British the perfect opportunity to launch the naval invasion. ",
+                            "In preparation for Operation Red Flood, the Internationale initiated a massive deception campaign to cause mass confusion among the German high command, the aim was to get the Germans to pull off the port garrisons, feeding intelligence about how the German navy managed to crush the British navy, giving them full naval supremacy, but in reality the German navy was docked in Kiel for naval exercises. Communication lines between the fronts and Berlin were cut by saboteurs, cutting communication between the fronts and to high command in Berlin. ",
+                            "The extent of this deception campaign was unknown, but the Internationale’s goal of causing confusion was a massive success, Berlin was completely in the dark on what was going on in both the Naval and Western theatre."                            
+                        ]
+                    },
+                ]
+            },
+            {
+                sectionName: "1942",
+                sectionHeaders: [
+                    {
+                        header:"British and French Troops Step Foot in Northern Germany",
+                        sectionBody:[
+                            "Early January morning 1942, British and French troops successfully capture Bremen and Wilhelmshaven, as reinforcements arrive the invasion force spreads outs rapidly, sweeping through western central Germany, disrupting the Western Front’s supply lines and logistics. However, high command was still caught in the dark as communication lines are being repaired. By now the Internationale forces have reached major cities such as Hamburg, Cologne, and have captured the Rhineland. It was only when enemy forces reached the outskirts of Berlin did high command realize they had a massive problem on their hands.",
+                            "By now, the offensive into France had stopped due to a loss of connection to supply lines, it was only now that generals from the western front received orders to redeploy troops to defend the home front. Reichspakt members also came to aid in containing the situation in the German home front. Efforts to contain the Internationale forces initially failed as Communard and British forces still continued to push even though losses were mounting, their efforts would however prove to be successful as Berlin was captured on February 2nd 1942. Unfortunately for the Internationale, that was as far as their invasion would go as the German Tank Corp arrived in the Rhineland region.",
+                        ]
+                    },
+                    {
+                        header:"German Liberation of the Home Front",
+                        sectionBody:[
+                            "The German Tank Corp along with the assistance of a couple wings of Fighters and CAS started conducting counteroffensive operations in mid February. Their goal was simple, drive the invaders back out to the sea. Thus the German Tank Corp began their Counteroffensive on the Rhine river, pushing upwards towards the city of Cologne and continuing until they liberated Bremen and Wilhelmshaven. The speed that the Tank Corp was going at took the Internationale by surprised, causing them to start retreating from the front to more defensive territory in an effort to stop the Tank Corp from taking the last major port city Hamburg. This retreat lead to the liberation of Berlin on March 30th 1942. ",
+                            "Unfortunately the Internationale would not be so lucky to fortify fast enough as by Early April 1942 Hamburg was liberated by Reichspakt forces, causing the entire invasion force to be cut off from reinforcements.  By Mid April 1942, operation Red Flood had ended, a massive loss for the Internationale as tens of thousands of men were left stranded to become German POWs",
+                            "The German High Command would never let this type of event ever happen again, leaving 3 divisions of Infantry to guard all coastal ports that border the North Sea, while the rest of the home front army were redeployed back to the western front to in preparation for a Spring Offensive into France. "
+                        ]
+                    },
+                    {
+                        header:"Austrian Empire Defeats Socialist Italy",
+                        sectionBody:[
+                            "During the First Western Offensive and the subsequent battle of the home front, the Austrian Army had been hard at work trying to break through the Italian Alps. With the help of the German Airforce in the Region, the Austrians managed to breakthrough the Alps and from there were able to sever supply connections between northern Italy and Rome. From there the Austrians pushed down the Italian peninsula, reaching Rome by mid April. By mid May, the Italians had surrendered to the Austrians, opening a second front for the Internationale to deal with.   ",
+                        ]
+                    },
+                    {
+                        header:"The Spring Offensive of 1942-1943",
+                        sectionBody:[
+                            "With the Battle of the Home front concluded, the German army were now motivated more than ever to bring down the Internationale. The plan was to sweep through northern France, quickly capturing Paris and reaching the English channel, cutting the entire northern front from supply allowing for an easy clean up effort. Then from there, sweep through western France and down to the Pyrenees ",
+                            "The Offensive began in mid April, smashing through the now demoralized Communard forces. However the Germans had under estimated the enemy fighting capabilities leading to a slow than a more expected fast breakthrough. As the German army advanced into western France, resistance grew stronger and stronger with the fighting intensifying as German forces reached the outskirts of Paris on July 28th 1942. Despite fierce resistance, German forces were able to capture Paris on July 29th 1942. ",
+                            "A brief period of rest would follow after the fall of Paris to recuperate the losses of the first phase of the offensive. Now learning from their mistakes of phase one, the German army continued offensive operations in February 1943, this time they saw massive success as a breakthrough in the North lead to the encirclement of Internationale forces in Normandy and Pas de Calais. The Tank Corp would take this opportunity to punch through the now thin Northern front, reaching the Bay of Biscay and Capturing Nantes on February 23rd 1943. Brest would fall on March 11th 1943 followed by Bordeaux on April 6th 1943. By late April, the German army had managed to cut off Communard France from Iberia, surrounding what’s left of the French and British forces in Southern France unable to escape to Britain. ",
+                        ]
+                    }
+                ]
+            },
+            {
+                sectionName: "1943",
+                sectionHeaders: [
+                    {
+                        header:"Iberian Liberation",
+                        sectionBody:[
+                            "In an effort to secure Iberia due to the failure of the Halifax conference, the German Tank corp and first Army launched a brief invasion of Iberia to liberate Spain and Portugal who had been under Internationale occupation ever since 1941. This liberation’s goal was to install friendly Reichspakt aligned governments who would build legitimacy, eventually joining the Reichspakt after the war.  The campaign was swift, taking over one month to reach Lisbon in May 1943."
+                        ]
+                    },
+                    {
+                        header:"Capitulation of the Commune of France ",
+                        sectionBody:[
+                            "On the 2nd of June 1943, the government of the Commune of France announced their formal surrender as German troops advanced into Southern France and the Austrians broke through the French Alpine defences, capturing Annecy. This left the remaining army of the British stranded in Southern France as German forces closed in on their positions and the Entante Navy blocking any convoys from leaving Marseilles and Nice. The Union of Britain now stood alone, becoming the last bastion of Syndicalism in Europe. The German air force began a massive bombing campaign in Britain to destroy military installation while the German High Seas fleet began to prepare the English Channel for a large scale naval invasion."
+                        ]
+                    },
+                    {
+                        header:"Operation Sea Lion, The Invasion of Britain",
+                        sectionBody:[
+                            "On the dawn of August 23rd 1943, German troops in Normandy were given the green light, the seas were calm as the High Seas fleet escorted the invasion to their destination, the city of Dover. Dover was selected as the beach head as it is the closest major port on Great Britain to continental Europe, but anticipating that the Union of Britain would have defended Dover, the Invasion was also set on landing nearby in Portsmouth to then link up with forces in Dover. As both invasions landed they faced stiff resistance against the British, however as the day went on, the garrison in both Portsmouth and Dover began to collapse leading to the surrender of the cities.",
+                            "From there the German Army was able to link up the two beach heads and pushed out towards the London and down the rest of the southern coastline. London would fall on September 1st 1943, with the British government evacuating to Liverpool. Resistance from British troops grew day by day but as the Germans pushed deeper into Britain it was clear that the Third Internationale was on its last legs made even more apparent as Birmingham and Bristol would fall soon after London. As German troops came just 50 Km from Liverpool, the British Government issued an order to all Internationale troops to lay down their arms as the Union of Britain surrenders on September 21st 1943, ending the second world war on the western front. What follows would be a tense peace treaty negotiation as the Entante and Reichspakt would be invited to London to discuss the future of Western Europe. ",
+                        ]
+                    },
+                    {
+                        header:"Treaty of London (September 31st 1943)",
+                        sectionBody:[
+                            "The Treaty of London would mark the first time the Reichspakt and Entante would meet ever since the failure of the Halifax conference. Since no cooperation was agreed upon, the Entante and Reichspakt competed to secure as much land as possible from the now defunct Third Internationale.",
+                            "The aims of the Entante were simple, secure the homelands of the exiled British and French governments, ever since the Union of Britain and Commune of France were established, thousands of loyalists along with the British and French governments fled their Homeland towards the colonies, waiting for a day where they can strike back and reclaim their homeland.",
+                            "The aims of the Reichspakt were also simple, secure the British and French homelands such that the Entante could not threaten German hegemony. The war effort they believed was carried by the Reichspakt alone and thus it was only members of the Reichspakt that deserved the spoils of war. Arguing that it was almost entirely German and Reichspakt blood that paid the price for destroying Syndicalism and liberating western Europe ",
+                            "In the end, the Entante were not in a position to challenge any claims the German and other Reichspakt diplomats put on the table as it was true that after the capitulation of both the Union of Britain and Commune of France the Entante controlled less on Europe than what they started with. ",
+                            "Spain would be liberated with a Pro-German government while the fate of Italy would be given to the Austrians. Portugal was lucky enough to rejoin the Entante despite being occupied by the German army. ",
+                            "Britain and France would be placed under a German military government that would oversea its de-syndicalisation and reconstruction efforts. This move angered the the exiled British and French governments arguing that it was their homeland and that they had an inherent right to reclaim their homeland, but they were in no position to challenge that and thus were forced to relent and allowed the treaty to be signed.",
+                            "Once the public heard news of what happened at in London they were enraged, sacrificing everything for their government on the promise of returning home only to be rewarded by losing a crucial ally in Spain and German dominance on Europe. Riots broke out in the streets pressuring both the British and French governments to address the angry masses. While turmoil was engulfing the Entante, the Germans now focused their efforts solely on the Eastern front."
+                        ]
+                    },
+                    {
+                        header:"The Autumn Eastern Offensive, September 1943",
+                        sectionBody:[
+                            "Once the Internationale fell, the western armies were sent eastwards for one final push into the Russian Empire, starting in Ukraine, the armies of the Reichspakt spearheaded by the German Tank Corp pushed forward across the border, shattering the Russian frontline which had stayed stagnant for almost 3 years, this sudden push prompted the Russian army to reallocate troops but due to the sheer number of divisions on the frontline no effective defence was able to be formed allowing the Germans especially the tanks to carve deep into south western Russia. While the the north west a slow but methodically effective offensive was taking place, the southwestern push left the north undefended, leading to the capturing of major cities such as Smolensk. But as the offensive continued into November 1943, Berlin would receive news that would plunge the Reichspakt into a near perpetual state of war. ",
+                        ]
+                    },
+                    {
+                        header:"The Third World War Begins (November 7th 1943)",
+                        sectionBody:[
+                            "Ever since the conclusion of the Treaty of London, the Entante had been hostile any attempt at normalization of relations with the Reichspakt. Although the Canadian/British Exiled government were unwilling to provoke the German Empire, public pressure from British Exiles, Canadians, and pressure from the French government forced the issue through, publicly announcing that the British and French military governments on their homelands were nothing but another foreign occupier and an illegal occupation. At first the German empire ignored these comments made as they’d believe that the Entante would never be so bold to act on their words. Yet on November 7th 1943, Canada declared war on the British Military Government with the French Republic following suit with their own declaration on the French Military Government. Some believe that this will be a quick war as by now the Germans have both one of the largest armies, navies, and air forces in the world. Yet nobody realized that this war would drag on for another 8 years.",
+                        ]
+                    }
+
+                ]
+            }         
         ]
     },
-    "hey there",
-    "bye bye"
+    {
+        year: "1944",
+        sections:[
+            {
+                sectionName: "1944",
+                sectionHeaders:[
+                    {
+                        header:"The Push Towards the Urals",
+                        sectionBody:[
+                            "As the Autumn offensive went on, it became increasingly clear that despite heavy casualties on the Russian’s side, the Russian government and army were more than willing to continue the fight. What was once thought to be the final offensive now appeared to be the start of a grueling campaign in Russia, made even more difficult due to a strained supply line as the armies of the Reichspakt pushed deeper into western Russia. By Jan 7th 1944, St Petersburg and Moscow were captured by the German army, yet the Russians did not surrender. Through the winter and spring the Reichspakt army slowly pushed their way towards the Urals while in the south troops were closing in on Tsaritsyn, the last major city west of the Ural mountains, encircling and capturing the city by July 25th 1944. It wasn’t until the capturing of Yekaterinburg on November 16th 1944 did the Russian Army finally lay down its arms, officially ending the Second Weltkrieg."
+                        ]
+                    },
+                    {
+                        header:"The Ottoman Excursion into Central Asia",
+                        sectionBody:[
+                            "One of the major contributing factors to the fall of Russia was the Ottoman lead invasion of Central Asia during the 1943 to the end of the war in Russia in November of 1944. Though initially struggling to breakthrough the middle eastern coalition lead by the Ottomans broke through the Russian defences in Turkmenistan and began rapidly taking over large swaths of territory in Central Asia. This prompted the Russian army to send troops to hold the line there but all attempts were thwarted as the Ottoman army was enacted reforms to specialize in desert combat ever since the war of the sands of 1937 between the Cairo Pact and Ottomans. this Central Asian front eventually reached the borders of Siberia, forcing the Russians to garrison a large front line with troops that were desperately needed in the western front. At the end of the war, the Ottoman lead coalition was rewarded with overlordship over all of the central Asia and receiving praise in their actions of helping end the Russian front. "
+                        ]
+                    },
+                    {
+                        header:"Treaty of Moscow (November 26th 1944), The End of the Second World War",
+                        sectionBody:[
+                            "The Treaty of Moscow was an important treaty, not only was it the treaty that dismantled Russia’s Moscow Accord but was the treaty that officially ended the Second Weltkrieg. The first nations on the chopping block were the nations of Serbia and Greece, their fate would ultimately be handed to the Austrian Empire. ",
+                            "The Russian Empire was dismantled even further than the Treaty of Brest-Litovsk of World War one",
+                            "Ukraine was expanded to include multiple states along the border including cities like Rostov, Kursk, Kharkov, and reaching as far west as Voronezh. White Ruthenia was expanded to include the cities of Smolensk and Vitebsk. The United Baltic Duchy was given the remaining parts of Russian controlled Latvia. Finland was greatly expanded, gaining all of Murmansk and Karelia. While the rest of Russia was organized into a pro-German government with Siberia gaining independence.",
+                            "Through subsequent concession the Russian state was made to be heavily reliant on the German Economy, ensuring that Russia may never rise to threaten German interests again."
+                        ]
+                    }
+                ]
+            },    
+            {
+                sectionName: "1945",
+                sectionHeaders:[
+                    {
+                        header:"First moves against the Entante ",
+                        sectionBody:[
+                            "During the final days of the push towards the Urals, the Entante would stage attacks against Reichspakt forces along the Spanish border, fortunately no major breakthrough in Spain occurred due to the advantageous. As the Russian front wrapped up, the armies of the eastern front were transported to the border of Portugal to commence a quick counter attack. Striking through the centre of the country the Portuguese and Entante forces stood no chance against the battle hardened German forces, leading to the surrender of Portugal on November 18th 1944.",
+                            "While the army was busy in Portugal the Navy was tasked to secure trade routes in the Atlantic. The Submarine fleets were tasked with patrolling and disrupting Entante trade the waters near the Azores and Portuguese control cape Verde while the High Seas fleet was on the nearby Canary Islands. On December 15th 1945 a large Entante Fleet in transport was spotted off the coast of the Azores, the High Seas fleet caught wind of their presences and was immediately dispatched to intercept this fleet, what happened next would be one of the largest naval battles in German history. The Battle of the Azores was a decisive victory for the German high seas fleet, the Entante fleet was caught completely by surprise as they believed that they were able to evade detection on their way to west Africa. In the end, the battle would prove to be a irrecoverable to the Canadian Navy, cementing German dominance in the Atlantic for the foreseeable future.  "
+                        ]
+                    },
+                    {
+                        header:"Invasion of Nationalist France",
+                        sectionBody:[
+                            "With the Atlantic secured, France was now isolated from any reinforcements from North America. Allowing the Germans to stage a naval invasion into Morocco to secure the Straits of Gibraltar. Landing in Morocco on January 10th 1945, the German army aided with a Tank Corp spearhead pushed towards Algiers and Tunisia. By January 31st 1945 the Nationalist French Government surrendered however their troops would continue to fight in West Africa.",
+                        ]
+                    },
+                    {
+                        header:"Invasion of Canada",
+                        sectionBody:[
+                            "After the fall of France, Canada was now isolated from the rest of the Entante. However, crossing the Atlantic in one Naval Invasion from Europe would be impractical, thus the Germans needed a forward base of operations. The target for this endeavour would be the West Indies Federation. Using Cuba as a staging ground, several naval invasions and would land on islands like Jamaica, the Bahamas, Bermuda, and the lower Antilles resulting in the capitulation of the West Indies Government. From there the German prepared one final Naval Invasion to land in Canada and end the war. Landing in Halifax on June 5th 1945, the Germans met serious resistance in New Brunswick as they pushed out of Nova Scotia. To circumvent this defence a second naval invasion would take place and land behind the Canadian defensive lines on the mouth of the Saint Lawrence, Quebec City was flooded with German troops and the tank corp was shipped to the Canadian front. The New Brunswick defence was now completely surrounded and subsequently destroyed, clearing the way for the German troops in nova scotia to move up. Ottawa and Toronto would fall to the Germans on August 6th and 27th with intensifying Canadian resistance meeting the Germans at each major city",
+                            "Despite the fall of Toronto and Ottawa the Canadian government did not surrender, leading to the Germans having to traverse the vast forests of Northern Ontario. The remaining Canadian forces set up defensive lines between Manitoba and Ontario, preparing to bleed the Germans dry when they reach their defenses. For the next couple months after capturing Southern Ontario the Germans would find themselves trying to pierce the entrenched Manitoba line to no avail. The main reason for their failure to break through the line at first was the poor infrastructure and logistics network in Northern Ontario as well as harsh winter conditions. To elevate supply strains the Germans pulled the tank corp out of Canada in preparation for a possible invasion of India, thus leaving a pure infantry army to secure the rest of Canada. Fortunately as logistics infrastructure was built the Germans were able to break through the Manitoba line and reached Winnipeg during mid April 1946. Through the summer of 1946 the Germans drove across the Prairies facing minimal Canadian resistance up until they reached the Rocky Mountains where the Canadians setup their final defense lines. The Canadians put up a valiant effort to defend their last Major city Vancouver, but the city would be captured on September 15th 1946 causing the Canadian government to surrender. ",
+                            "Unfortunately for the Germans however, the Royal Family and British Exile government had fled Canada months backs without German intelligence picking it up. When the fall of Canada was received the British exiled government proclaimed that the Entante will fight until the last man. Revealing that the British and Royal family had fled to India to continue the fight. It was now apparent that the defensive lines setup in Manitoba and in the Rockies were intended to delay the German advance long enough to evacuate the British government. ",
+                            "Morale in Germany was now at an all time low as the Canadian invasion was suppose to the invasion that would end the war. The German government was prepared to enter into peace negotiations with the Entante but with the British vowing to fight to the last man, the German government had no choice but to continue on. The goal now is to quickly and decisively defeat the Entante in India in order to force the Entante to surrender. This was compounded with the fact with German intelligence indicating possible US intervention in the war. Thus a timer had been set on the German government to force a surrender of the Entante before the US could join the war. "
+                        ]
+                    }
+                   
+                ]
+            },
+            {
+                sectionName: "1946 & 1947",
+                sectionHeaders:[
+                    {
+                        header:"Invasion of India",
+                        sectionBody:[
+                            "Preparations for an Invasion of India had been underway ever since capturing Southern Ontario in the summer of 1945, evident with the fact that the Tank corp had been relocated to the Middle East  preparing for a possible invasion. When it became evident that the Entante was not going to surrender after the fall of Canada, an Indian invasion was bound to happen. ",
+                            "Operations for the Invasion of India began on August 14th 1946, the first objective was to secure Sri Lanka and the Maldives as a forward operating base. Using the Airfields in Sri Lanka, paratroopers would paradrop behind enemy lines in the southern tip of India, assisting a Naval Invasion by the Marines. Once the southern tip was secure as a beach head, the main German army would be transported over to begin offensive operations. The Indian army was one of the largest in the world but saw little combat where as the German army had their most experienced armies on the Indian front as a way to swiftly bring India down. The battle up the peninsula saw fierce fighting from the Indian and combined Entante armies, from January to February 1947 the Germans were only able to push up to central India capturing major cities like Hyderabad, but this was not enough to bring India down. ",
+                            "By this point, German intelligence received word that the US is currently discussing intervention in the Third World War as they felt threatened by the possible presence of pro-German governments to the north and south of the border. Knowing this high command pressured the generals of the Indian front to continue offensive actions on the front immediately and to be as aggressive as possible. The generals argued that they needed more time to recuperate and adapt their initial offensive plans as they faced stiff Indian resistance, however they knew that if they didn’t continue their momentum their chances of winning would diminish and thus continued offensive actions without proper planning. Despite major losses on both sides of the invasion, the Germans were able to push up to northern India, capturing Mumbai and securing the state of Orissa. But on March 7th 1946, the German government would receive the news they had been dreading the most. The US had officially joined the Entante. ",
+                        ]
+                    },
+                    {
+                        header:"US Entry into the Entante",
+                        sectionBody:[
+                            "After almost 10 years of reconstruction after the Second American Civil War, the now secured military Junta of the United States of America officially announced its admission into the Entante and its subsequent declaration of war on the Reichspakt. This news was received with dread across the Reichspakt, the Entante were on its last legs ever since the fall of Canada and France 2 years ago but with American intervention the Third World War the Entante have regained its fighting force. This would also mean that the occupation of Canada as well as all possessions in the Americas were now in active threat. There was no way the Reichspakt were going to be able to hold onto Canada, thus a mass evacuation was issued to try and save as many Reichspakt troops as possible before the Americans started their march. ",
+                            "German Naval Dominance in the Atlantic was now challenged by a large influx of fresh American fleets. Brazil was in active threat of American troops, being the only Reichspakt member in the Americas it would have been foolish not to assume that Brazil would be the first to see American troops. Temporary naval dominance by the Americans would disrupt evacuation attempts in Canada, leaving tens of thousands of Reichspakt men captured by the Americans. Trade in the Atlantic halted as the High Seas fleet moved to contest American fleets. By April of 1947, Canada and the West Indies Federation had been liberated by American forces. Even though the American Navy had been confined near the Americas, Brazilian waters were still contested between the two navies. ",
+                            "Public morale and war support had increased ever since the successful invasion of India, but the news of US intervention plummeted morale as everyone realized that with the liberation of the Canada and Caribbean holdings compounded with serious challenge over naval dominance of the Atlantic, the war was now no where near over."
+                        ]
+                    },
+                    {
+                        header:"The Fall of India ",
+                        sectionBody:[
+                            "With US entry into the war the generals saw no reason to continue aggressively pushing into India. The frontlines in India fell silent for a short period between March to May 1947 giving the Germans time to recuperate losses, build up military infrastructure and let supply lines catch up to the frontlines. When offensive actions resumed in June, Delhi was swiftly captured on June 8th 1947, by June 15th the front line was split when reaching the Himalayas, the Tank Corp was relocated to the west with the aim of pushing towards the Iranian troops in Pakistan where as the east will continue towards Siam. By July 26th 1947, the Dominion of India surrendered with the British Government and Royal family returning back to Canada after its liberation.   "
+                        ]
+                    }
+                   
+                ]
+            }, 
+        ]
+    },
+    {
+        year: "1944",
+        sections:[
+            {
+                sectionName: "1948",
+                sectionHeaders:[
+                    {
+                        header:"Continuation of the Pacific War",
+                        sectionBody:[
+                            "Back in 1940 when the Second World War began, the Japanese Empire had also declared war on the German Empire. The Japanese expected stiff resistance in German East Asia when invading the colony but in reality they faced little to no resistance from the German government itself. German East Asia was captured 3-4 months into the second world war but apart from that event, there had been no fighting between the Reichspakt and Japanese, until now. ",
+                            "The now German Pacific High Seas Fleet (an old detachment of the main High Seas Fleet that grew in strength until it became its own fleet) now descended upon the Insulindian Archipelago, despite the Japanese navy matching the Germans in experiences, the Pacific Fleet itself is already larger than the entire Japanese navy, a fact noticeable when the Japanese Navy was decisively defeated in the South China Sea while in transport to contest the waters of Insulindia. The Submarines caused chaos for both the Insulindian and Japanese trade fleet, causing a logistical nightmare for the garrisons of the islands of Insulindia.",
+                            "In May of 1948, the German army launched a series of Naval Invasions to cripple the Insulindian Government, dropping troops off on almost every major island in the Archipelago including the capital Batavia. Seizing the capital of Insulindia as well as the majority of major cities caused the Insulindian government to surrender.",
+                            "After the surrender of Insulindia the Germans prepared a quick naval Invasion of the Philippines, launching on October 20th 1948 and landing all around the country by the next day including the capital Manila. Taking another 2 months to traverse the rest of the country, the Filipino government surrendered after the fall of Davao. With the collapse of the Insulindian and Filipino governments the Germans are at an optimal position to threaten the Japanese homeland. For the next month the German High Command would plan one of the most extensive Naval Invasion plans at this point, Operation Sunset."
+                        ]
+                    },
+                ]
+            },
+            {
+                sectionName: "1949",
+                sectionHeaders:[
+                    {
+                        header:"Operation Sunset",
+                        sectionBody:[
+                            "The first phase of Operation Sunset was to surround the Japanese Home Island both Navally and by land wise, German submarines were sent to blockade the home island and destroy any Japanese allied convoys going out and coming in. The invasion of Taiwan would begin on January 24th 1949 , arriving on the island hours later with little to no Japanese resistance, Ryukyu would shortly be seized by German paratroopers from Taiwan. From there, the Germans would Naval Invade southern Korea to further isolate the Japanese Home Island. ",
+                            "With Phase One down the second phase could begin, from the airports built up in south Korea and Ryukyu a massive bombing campaign in southern Japan would begin as German Intelligence received word that the Japanese had fortified itself from a German invasion, placing an extensive amount of Garrisons both in and around port cities. The goal of this bombing campaign was to clear the skies and soften up the port garrisons by damaging infrastructure, airports, railways and supply hubs. Starting from February to Mid April 1949, the Germans would bomb Japan day and night to ensure their success in the upcoming invasion of the Home Islands.  ",
+                            "Phase Three of Operation Sunset began on April 18th 1949, paratroopers dropping from South Korea would land inland on Kyushu, disrupting logistics, paralising supply to the entire island, while the paratroopers were dropping and army from Ryukyu and South Korea would launch and land on Nagasaki. The port garrisons were completely wiped out and Japan was forced to abandon Kyushu the Germans. With a successful beach head on Japan, the tank corp was transported over to Japan in preparations for an offensive, meanwhile the paratroopers would launch from Nagasaki behind the defensive lines near Hiroshima, disrupting supply going towards the troops hold the line at the strait between Kyushu and Honshu. Attacked from all sides the troops of the defense line surrendered and the Tanks were moved towards the frontline at Hiroshima. ",
+                            "Offensive plans were executed on in early May, due to the extensive bombing campaign and air superiority, the Japanese troops stood no chance against the armoured offensive. Hiroshima would fall on May 8th 1949, Boke fell 11 days later followed by Osaka on May 30th 1949. By now the Japanese defense of the homeland was nearly non-existent as the speed in which the Tank Corp had moved in caused mass disorganization for the Japanese when retreating, many divisions were encircled and cleaned up by the infantry as the Tank Corp pushed up. The Japanese Army tried to pull troops off of various mainland Asian fronts such as the Burmese and Siberian front but due to German naval Supremacy they were unable to be transported home without risking a German Submarine fleet hunting them. On June 10th the Germans had captured Yokohama, a neighbouring city of Tokyo, just 2 days later on June 12th 1949 the Japanese Emperor would call for its army to lay down its arms as peace negotiations began for the fate of the Japan. ",
+                        ]
+                    },
+                    {
+                        header:"Invasion of China",
+                        sectionBody:[
+                            "After the capitulation of Japan and the subsequent treaty of Tokyo, the Fengtian lead Republic of China refused to surrender along with the Kingdom of Siam, who has fortified itself in the Burmese front as well as its coastline, preventing any offensive in the dense jungle region or any naval invasion from gaining a beachhead. German Intelligence believe that an invasion of China wouldn’t cause to many losses as the estimated army size is believed to be about 30 times smaller than the German army. High Command’s suspicions were confirmed when the German army met light resistance at the frontlines when reaching the border between Manchuria and Korea. The invasion began on July 10th 1949, Harbin fell about 19 days later on July 29th 1949, and the Germans would reach the border of Mongolia in early August 1949.",
+                            "After reaching the Mongolian border the Siberian front for the Co-prosperity sphere had been cut off from the rest of the China, the Germans began marching south into China proper with the fall of Beijing on August 23rd 1949. The invasion into China proper faced slightly more resistance but at this point of the war there was no stopping the advance of the Reichspakt. The Germans would spend the next 2 months capturing as much Chinese territory as possible, it wasn’t until the fall of Chongqing on October 31st 1949 that the Republic of China finally surrendered leading to the treaty of Beijing."
+                        ]
+                    },
+                ]
+            },
+            {
+                sectionName: "1950 & 1951",
+                sectionHeaders:[
+                    {
+                        header:"Invasion of Siam, the End of the war in the Pacific.",
+                        sectionBody:[
+                            "Siam’s border was now exposed and completely unguarded when the Chinese capitulated, the invasion began as soon as German troops arrived at the border, capturing as much territory they could before the Siamese troops were able to reinforce the frontline. But as the Reichspakt flooded troops in the Siamese stood no chance. By January 15th 1950 Siam was pushed out of German Indochina and Burma leaving Siamese troops severely disorganized, yet the government did not surrender. It took another 2 months to force the Siamese government to surrender, ending the War in the Pacific."
+                        ]
+                    },
+                    {
+                        header:"Second Invasion of the Caribbean",
+                        sectionBody:[
+                            "After wrapping up the War in the Pacific, focus was drawn back to North America as the US stood firm, achieving Naval Supremacy in the Caribbean. Luckily the Germans the Brazilians were able to hold off US forces in the North, even pushing them back into the sea. Once the German Army arrived in Brazil the first steps to recapturing the Caribbean needed to be fulfilled, taking back Naval Supremacy of Caribbean waters. The American Navy had the home field advantage as their fleets were closer to home, allowing for faster travel times between port and sea where as the German Navy’s nearest port was in Northern Brazil. Both navies were comparable in terms of quantity yet the Germans had an ace up their sleeve, the Pacific High Seas Fleet.",
+                            "After the end of the War in the Pacific, the Pacific High Seas fleet was told to merge back with the Atlantic fleet, the Atlantic fleet had not seen much action in their respective sea region due to the cautious nature the Naval commanders took, however the Pacific fleet consisted of battle hardened ships that fought constantly with the Japanese Navy in the South China sea as well as in the Pacific islands, giving them the necessary experience needed to fight in Archipelago seas. Yet despite the now combined High Seas Fleet being more experienced, Caribbean naval dominance remained contested.",
+                            "High command had a new plan, utilizing paratroopers, they can completely bypass the Naval Dominance needed by performing a surprise paradrop operation on the Lower Antilles, and from there continue the paradropping operation up into Puerto Rico acquiring Naval Ports directly in the Caribbean for the High Seas Fleet to dock and repair. Thus on September 13th 1950, German paratroopers dropped into the Lower Antilles, forcing a second surrender of the West Indies Federation. Newly created Naval Bombers were deployed in the airports of the Lower Antilles to aid in achieving naval dominance. ",
+                            "September 21st 1950 marked an important day in the battle for naval dominance. Starting off as a convoy raiding operation near Cuba, the battle escalated to a full scale naval battle as both the German and American Fleets exchanged blows with naval bombers from both sides trying to sink as many ships as they can. In the end the battle off the coast of Cuba was a decisive German victory, having sank multiple Battleships and Aircraft Carriers. The remaining American fleet retreated to port, giving the Germans a brief but crucial window of naval supremacy. ",
+                            "On October 13th 1950, a naval invasion was launched and liberated Cuba from American occupation, subsequently the Bahamas was also captured and the German Navy transferred over the majority of the German Army to be stationed in Cuba for the upcoming Invasion of America."
+                        ]
+                    },
+                    {
+                        header:"Invasion of America (25th November 1950)",
+                        sectionBody:[
+                            "On the morning of November 26th 1950, the American Coast garrison in Miami were awakened by the sounds of a naval invasion by German forces, the garrison scrambled to form a cohesive defense of the city but were enveloped and circled by flanking German troops. Similar invasions were sighted up the Floridian Peninsula, capturing vital airports and military infrastructure. By then end of the 27th the entire peninsula was under German control, pushing up to Jacksonville and the border of Georgia. During December an offensive into the American deep south began, the Americans still caught off guard struggled to form a defensive line and thus had to abandon the states of Georgia and Alabama to German occupation. fortunately for the US however, by January 1951 the offensive stopped as the Germans dug in for the winter. ",
+                            "During the invasion of Florida, a coalition of Reichspakt forces lead by the Austrians launched their own naval invasions into Mexico as a way to open up a second front on the mainland to pull troops away from the German lines in the Southern US. The initial landings were met with little resistance from the Mexican army, allowing the coalition to push deep into Mexico. After the fall of Mexico City the Mexican government collapsed, allowing Reichspakt forces to rush towards the US border. The Americans promptly pulled troops back to reinforce what remains of the Mexican army up in the north establishing a defensive line on the US border at which Reichspakt forces were unable to breakthrough. Focus drew back towards the Southeast as the Germans make aims to push towards the Mexican border. "
+                        ]
+                    },
+                    {
+                        header:"Push towards Washington DC",
+                        sectionBody:[
+                            "As Spring appeared along to horizons, the Germans gear up for a push along the East Coast. the Tank Corp had been positioned and following the devastation of the US air force between January and April, Air Superiority was achieved and close Air Support were free from enemy interception. The Tank Corp broke through the American lines in the Carolinas, pushing and overrunning American forces on the retreat.",
+                            "With a breach in the East, American forces were pulled back from both the Mexican front and west of the Mississippi, allowing German forces on the Eastern bank of the river to push through and make a march towards the Mexican border, simultaneously the Reichspakt forces in Mexico particularly on the Texan border started their own offensive into US territory aiming to meet in the middle as the Germans pushed into Louisiana. Linking up at around May 1951, Reichspkt forces were able to spread themselves out across a massive frontline stretching from now Virginia to California. ",
+                            "It was clear that the US despite having one of the largest armies in the world, were having trouble containing the overwhelming number of Reichspakt forces. Gaps in the American lines appeared more frequently giving the Germans the ability to exploit these gaps to rush towards major cities. However when German forces arrive near the capital they found strong resistance in and around the Maryland, thus the Germans changed their objective and aimed to cut the US in half by pushing into the Midwest. In the span of 2 weeks, the German Tank Corp reached Lake Ontario, capturing Detroit, Cleveland, Pittsburgh, and Chicago between the June 26th to June 29th, this effectively split the country in half, leaving everything in the west isolated from the capital.",
+                            "As American defenses crumbled, Washington DC stood as the US’s last stronghold The American troops stationed in the capital put up a valiant effort to defend the city. But in the end, Washington DC was encircled and captured on July 1st 1951. General MacArthur was no where to be seen, fleeing with the government to New York to try to raise another stronghold but American Morale was too low at this point. From July 2nd to the 5th, the rest of the major east coast cities would come under German occupation, including New York City. MacArthur yet again tried to flee but the rest of his administration managed to wrestle control away from him and sued for peace with the German Empire, thus ending the American Military Junta. ",
+                            "After the fall of America, Canada would not be a challenge as it took only about 2 weeks for the Germans to reoccupy most Canadian cities. By August 6th 1951, the entirety of North America was now under German occupation. Yet the Entante still chose to fight, retreating to the last bastion of their empire, Australasia. but everyone including the Australasian people can see the writing on the wall, the war was finally coming to an end."
+                        ]
+                    },
+                    {
+                        header:"The Invasion of Australasia, the Final Invasion of the War",
+                        sectionBody:[
+                            "It took about a month after the second fall of Canada to transport the necessary troops needed to invade Australasia. The Reichspakt, especially the Germans, did not want the Entante and Royal Family to escape their impending fate, thus they set up the most elaborate naval invasion to hit every major Australasian city simultaneously. The plan was complete on October 11st 1951, launching 1 day after on October 12nd. The first phase was to capture New Zealand, to test the defenses of the Australasians, yet no resistance was met on the two islands. Capturing Christchurch, Auckland, and Wellington between October 12th-16th 1951.",
+                            "The Second phase of the Invasion started on October 24th, striking every Australian city simultaneously. From Perth to Canberra, German troops face what’s left of the Entante army as they desperately defend their positions to no avail, the Australian public as well as the army are tired of the war that has now lasted almost 8 years. Perth was captured on the 24th, Sydney and Brisbane was captured on the 27th, Canberra was captured on the 29th, and finally on November 7th 1951 Melbourne was captured triggering the Australasian government to surrender, ending the Third Weltkrieg. "
+
+                        ]
+                    }
+                ]
+            } 
+        ]
+    }
 ]
 export async function GET(request){
     const requestUrlSplit = request.nextUrl.pathname.split("/")
