@@ -1,7 +1,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 import ApiComponent from "@/app/components/ApiComponent";
-
+import Image from "next/image";
 export default async function page(){
     async function apiCall(){
         const res = await fetch(`http://localhost:3000/api/articles/0`);
@@ -42,7 +42,23 @@ export default async function page(){
                             {section.sectionHeaders.map((header)=>
                             <div className="my-8 flex flex-col">
                                 <h1 className="bg-soot bg-opacity-20 w-10/12 self-center rounded-3xl text-5xl text-center py-4">{header.header}</h1>
-                                {header.sectionBody.map((bodyText)=><p className="px-8 py-4 text-lg indent-8">{bodyText}</p>)}
+                                {header.sectionBody.map((body)=>(Object.keys(body).length > 1 ? 
+                                <div className="flex flex-col mt-8">
+                                    <div className="flex flex-col items-center gap-2">
+                                        <Image
+                                        src={body.image}
+                                        alt={body.imageCaption}
+                                        width={1484}
+                                        height={1168}
+                                        className="w-[700px] h-[550px] rounded"
+                                        />                                             
+
+                                        <p className="text-soot">{body.imageCaption}</p>                                       
+                                    </div>
+                                    <p className="px-8 py-4 text-lg indent-8">{body.text}</p> 
+                                </div>
+                                :
+                                 <p className="px-8 py-4 text-lg indent-8">{body.text}</p>))}
                             </div>
                             )}
                         </div>

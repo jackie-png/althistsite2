@@ -42,7 +42,11 @@ export default async function page(){
                             {section.sectionHeaders.map((header)=>
                             <div className="my-8 flex flex-col">
                                 <h1 className="bg-soot bg-opacity-20 w-10/12 self-center rounded-3xl text-5xl text-center py-4">{header.header}</h1>
-                                {header.sectionBody.map((bodyText)=><p className="px-8 py-4 text-lg indent-8">{bodyText}</p>)}
+                                {header.sectionBody.map((bodyText)=>
+                                    {
+                                        <p className="px-8 py-4 text-lg indent-8">{bodyText}</p>
+                                    })
+                                }
                             </div>
                             )}
                         </div>
