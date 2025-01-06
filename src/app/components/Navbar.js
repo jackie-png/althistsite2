@@ -8,6 +8,7 @@ import { TimelineCircle } from "./TimelineCircle";
 import { TimelineTriangle } from "./TimelineTriangle";
 import { SelectableCountries } from "./SelectableCountries";
 import { useRouter } from "next/navigation";
+import Link from "next/link";
 
 export default function Navbar(){
     const [timelineOpen, setTimelineOpen] = useState(false)
@@ -124,7 +125,7 @@ export default function Navbar(){
                                         duration: 0.5
                                     }}
                                     className="flex justify-center items-center h-16 bg-white border-ruby border-[10px] rounded-md w-32 py-1">
-                                    <h2>1936</h2>
+                                    <Link href="/articles/1936-1940" className="w-full h-full flex items-center justify-center">1936</Link>
                                 </motion.div>
                                 <motion.div 
                                     initial={{opacity:0, y: -30}}
@@ -134,7 +135,7 @@ export default function Navbar(){
                                         duration: 0.5
                                     }}
                                     className="flex justify-center items-center h-16 bg-white border-ruby border-[10px] rounded-md w-32 py-1">
-                                    <h2>1940</h2>
+                                    <Link href="/articles/1940-1944" className="w-full h-full flex items-center justify-center">1940</Link>
                                 </motion.div>
                                 <motion.div
                                     initial={{opacity:0, y: -30}}
@@ -144,7 +145,7 @@ export default function Navbar(){
                                         duration: 0.5
                                     }}
                                     className="flex justify-center items-center h-16 bg-white border-ruby border-[10px] rounded-md w-32 py-1">
-                                    <h2>1944</h2>
+                                    <Link href="/articles/1944-1948" className="w-full h-full flex items-center justify-center">1944</Link>
                                 </motion.div>
                                 <motion.div
                                     initial={{opacity:0, y: -30}}
@@ -154,7 +155,7 @@ export default function Navbar(){
                                         duration: 0.5
                                     }}
                                     className="flex justify-center items-center h-16 bg-white border-ruby border-[10px] rounded-md w-32 py-1">
-                                    <h2>1948</h2>
+                                    <Link href="/articles/1948-1951" className="w-full h-full flex items-center justify-center">1948</Link>
                                 </motion.div>
                                 <motion.div 
                                     initial={{opacity:0, translateX: -50}}
