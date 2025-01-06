@@ -39,11 +39,11 @@ export default async function page(){
                     <div>
                         <h1 className="bg-darkRuby text-6xl p-4 text-center text-snow font-bold tracking-wide rounded-3xl">{section.sectionName}</h1>
                         <div>
-                            {section.sectionHeaders.map((header)=>
-                            <div className="my-8 flex flex-col">
+                            {section.sectionHeaders.map((header, index)=>
+                            <div className="my-8 flex flex-col" key={index}>
                                 <h1 className="bg-soot bg-opacity-20 w-10/12 self-center rounded-3xl text-5xl text-center py-4">{header.header}</h1>
-                                {header.sectionBody.map((body)=>(Object.keys(body).length > 1 ? 
-                                <div className="flex flex-col mt-8">
+                                {header.sectionBody.map((body,index)=>(Object.keys(body).length > 1 ? 
+                                <div className="flex flex-col mt-8" key={index}>
                                     <div className="flex flex-col items-center gap-2">
                                         <Image
                                         src={body.image}

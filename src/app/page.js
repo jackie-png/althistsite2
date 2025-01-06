@@ -234,7 +234,7 @@ export default function Home() {
 
       </Carousel>
 
-      <div className="flex justify-center items-center bg-darkRuby h-32 text-6xl font-bold mt-8" ref={timelineRef}
+      <div className="flex justify-center items-center bg-darkRuby h-32 text-6xl font-bold mt-8"
       >
         <h1 className="border py-4 px-8 tracking-wider rounded">Peace Treaties</h1>
       </div>      
