@@ -2,7 +2,7 @@
 import React, { useEffect, useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faEmpire } from "@fortawesome/free-brands-svg-icons";
-import { faChevronDown, faChevronUp } from "@fortawesome/free-solid-svg-icons";
+import { faArrowRight, faChevronDown, faChevronUp } from "@fortawesome/free-solid-svg-icons";
 import { AnimatePresence, motion } from "framer-motion";
 import { TimelineCircle } from "./TimelineCircle";
 import { TimelineTriangle } from "./TimelineTriangle";
@@ -64,10 +64,10 @@ export default function Navbar(){
                         </div>
                         <div 
                             className={`${menuOption[1] ? "bg-ruby" : "bg-none"} flex gap-2 px-2 border-solid border-2 ${menuOption[1] ? "border-darkRuby" : "border-soot"} rounded h-9 items-center justify-center select-none hover:border-ruby hover:cursor-pointer`} 
-                            onClick={()=>handleDropdownOpen(1)}>
+                            onClick={()=>router.push("/articles/peace-treaties")}>
                             <h2>Peace Treaties</h2>
                             <div className={`flex justify-center items-center w-5 h-5 ${menuOption[1] ? "text-snow" : "text-ruby"}`}>
-                                <FontAwesomeIcon icon={faChevronDown}/>
+                                <FontAwesomeIcon icon={faArrowRight}/>
                             </div>
                         </div>
                     </div>
@@ -169,71 +169,7 @@ export default function Navbar(){
                                 </motion.div>
                             </div>                        
                         </motion.div>
-                    }    
-                    {menuOption[1] && 
-                        <div className="h-full grid grid-cols-12 text-white">
-                            <div className="col-span-5 text-xl flex flex-col items-center gap-8 justify-center">
-                                <motion.div 
-                                    initial={{opacity:0, x: -50}}
-                                    animate={{opacity:1, x:0}}
-                                    transition={{
-                                        duration: 0.3,
-                                        ease:"easeInOut",
-                                        delay: 0.5
-                                    }}
-                                    className={`${timelineOpen ? "bg-ruby" : "bg-none"} w-64 flex gap-2 px-2 border-solid border-2 ${timelineOpen ? "border-darkRuby" : "border-soot"} rounded h-9 items-center justify-center hover:border-ruby hover:cursor-pointer`}>
-                                    <h2>Europe and Africa</h2>
-                                </motion.div>
-                                <motion.div 
-                                    initial={{opacity:0, x: -50}}
-                                    animate={{opacity:1, x:0}}
-                                    transition={{
-                                        duration: 0.3,
-                                        ease:"easeInOut",
-                                        delay: 0.6
-                                    }}
-                                    className={`${timelineOpen ? "bg-ruby" : "bg-none"} w-64 flex gap-2 px-2 border-solid border-2 ${timelineOpen ? "border-darkRuby" : "border-soot"} rounded h-9 items-center justify-center hover:border-ruby hover:cursor-pointer`}>
-                                    <h2>South and East Asia</h2>
-                                </motion.div>
-                                <motion.div
-                                    initial={{opacity:0, x: -50}}
-                                    animate={{opacity:1, x:0}}
-                                    transition={{
-                                        duration: 0.3,
-                                        ease:"easeInOut",
-                                        delay: 0.7
-                                    }}
-                                    className={`${timelineOpen ? "bg-ruby" : "bg-none"} w-64 flex gap-2 px-2 border-solid border-2 ${timelineOpen ? "border-darkRuby" : "border-soot"} rounded h-9 items-center justify-center hover:border-ruby hover:cursor-pointer`}>
-                                    <h2>North America</h2>
-                                </motion.div>
-                            </div>
-                            <div className="flex justify-center">
-                                <motion.div 
-                                    initial={{height:"0%"}}
-                                    animate={{height:"100%"}}
-                                    transition={{duration: 0.3, delay: 0.3}}
-                                    className="bg-soot w-1 h-full rounded">
-
-                                </motion.div>
-                            </div>
-                            <motion.div
-                                initial={{opacity: 0}}
-                                animate={{opacity: 1}}
-                                transition={{
-                                    duration: 0.5,
-                                    delay: 0.5
-                                }}
-                                className="col-span-6 h-5/6 border-solid border-ruby border-2 rounded flex self-center items-center justify-center flex-col">
-                                <h2>North America</h2>
-                                <h2>North America</h2>
-                                <h2>North America</h2>
-                                <h2>North America</h2>
-                                <h2>North America</h2>
-
-                            </motion.div>
-
-                        </div>
-                    }  
+                    }      
 
                 </motion.div>}                
             </AnimatePresence>
