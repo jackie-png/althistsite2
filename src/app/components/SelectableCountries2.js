@@ -559,7 +559,7 @@ const SvgComponent = ({onHoverStart, onClick , props}) => {
           initial="initial"
           whileHover="canada"
           className="cursor-pointer"
-          onHoverStart={()=>onHoverStart({display:"Treaty of Ottawa", path: "treaty-of-ottawa"})}
+          onHoverStart={()=>onHoverStart("Treaty of Ottawa")}
           onClick={()=>onClick("treaty-of-ottawa")}
 
           >
@@ -858,7 +858,7 @@ const SvgComponent = ({onHoverStart, onClick , props}) => {
           initial="initial"
           whileHover="usa"
           className="cursor-pointer"
-          onHoverStart={()=>onHoverStart({display:"Treaty of Washington", path: "treaty-of-washington"})}
+          onHoverStart={()=>onHoverStart("Treaty of Washington")}
           onClick={()=>onClick("treaty-of-washington")}
 
           >
@@ -1075,7 +1075,7 @@ const SvgComponent = ({onHoverStart, onClick , props}) => {
           initial="initial"
           whileHover="france"
           className="cursor-pointer"
-          onHoverStart={()=>onHoverStart({display:"Treaty of Paris", path: "treaty-of-paris"})}
+          onHoverStart={()=>onHoverStart("Treaty of Paris")}
           onClick={()=>onClick("treaty-of-paris")}
 
           >
@@ -1154,7 +1154,7 @@ const SvgComponent = ({onHoverStart, onClick , props}) => {
           initial="initial"
           whileHover="england"
           className="cursor-pointer"
-          onHoverStart={()=>onHoverStart({display:"Treaty of London", path: "treaty-of-london"})}
+          onHoverStart={()=>onHoverStart("Treaty of London")}
           onClick={()=>onClick("treaty-of-london")}
 
           >
@@ -1193,7 +1193,7 @@ const SvgComponent = ({onHoverStart, onClick , props}) => {
           initial="initial"
           whileHover="algeria"
           className="cursor-pointer"
-          onHoverStart={()=>onHoverStart({display:"Treaty of Algiers", path: "treaty-of-algiers"})}
+          onHoverStart={()=>onHoverStart("Treaty of Algiers")}
           onClick={()=>onClick("treaty-of-algiers")}
 
           >
@@ -1211,7 +1211,7 @@ const SvgComponent = ({onHoverStart, onClick , props}) => {
           initial="initial"
           whileHover="india"
           className="cursor-pointer"
-          onHoverStart={()=>onHoverStart({display:"Treaty of Delhi", path: "treaty-of-delhi"})}
+          onHoverStart={()=>onHoverStart("Treaty of Delhi")}
           onClick={()=>onClick("treaty-of-delhi")}
 
           >
@@ -1285,7 +1285,7 @@ const SvgComponent = ({onHoverStart, onClick , props}) => {
           initial="initial"
           whileHover="siam"
           className="cursor-pointer"
-          onHoverStart={()=>onHoverStart({display:"Treaty of Bangkok", path: "treaty-of-bangkok"})}
+          onHoverStart={()=>onHoverStart("Treaty of Bangkok")}
           onClick={()=>onClick("treaty-of-bangkok")}
 
           >
@@ -1303,7 +1303,7 @@ const SvgComponent = ({onHoverStart, onClick , props}) => {
           initial="initial"
           whileHover="japan"
           className="cursor-pointer"
-          onHoverStart={()=>onHoverStart({display:"Treaty of Tokyo", path: "treaty-of-tokyo"})}
+          onHoverStart={()=>onHoverStart("Treaty of Tokyo")}
           onClick={()=>onClick("treaty-of-tokyo")}
 
           >
@@ -1513,7 +1513,7 @@ const SvgComponent = ({onHoverStart, onClick , props}) => {
           initial="initial"
           whileHover="russia"
           className="cursor-pointer"
-          onHoverStart={()=>onHoverStart({display:"Treaty of Moscow", path: "treaty-of-moscow"})}
+          onHoverStart={()=>onHoverStart("Treaty of Moscow")}
           onClick={()=>onClick("treaty-of-moscow")}
           >
           <motion.path
@@ -1571,7 +1571,7 @@ const SvgComponent = ({onHoverStart, onClick , props}) => {
           initial="initial"
           whileHover="china"
           className="cursor-pointer"
-          onHoverStart={()=>onHoverStart({display:"Treaty of Beijing", path: "treaty-of-beijing"})}
+          onHoverStart={()=>onHoverStart("Treaty of Beijing")}
           onClick={()=>onClick("treaty-of-beijing")}
 
           >
