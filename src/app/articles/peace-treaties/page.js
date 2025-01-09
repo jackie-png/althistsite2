@@ -17,8 +17,7 @@ export default function page(){
     },[currentHovered])
     return(
         <div>
-            <div className="border-2 p-4 border-solid flex justify-center">
-        
+            <div className="p-4 bg-darkRuby flex justify-center text-snow">
                 
                 <motion.h1 
                     key={currentHovered}
@@ -28,11 +27,11 @@ export default function page(){
                         duration: 0.3,
                         ease: "easeInOut"
                     }}
-                    className="text-6xl tracking-wide">
+                    className="text-6xl tracking-wide font-bold">
                     {currentHovered}
                 </motion.h1>
             </div>
-            <div className="min-h-screen bg-[#0B0B2B] border-y-8 border-solid">
+            <div className="min-h-screen bg-[#0B0B2B]">
                 <SelectableCountries2 onHoverStart={setCurrentHovered} onClick={goToLink}/>
             </div>
         </div>
