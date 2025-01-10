@@ -5,6 +5,7 @@ import {Noto_Serif} from 'next/font/google'
 import Navbar from "./components/Navbar";
 import { useRouter } from "next/navigation";
 import { usePathname } from "next/navigation";
+import Footer from "./components/Footer";
 const notoSerif = Noto_Serif({
   subsets:['latin'],
   weight: '400',
@@ -23,6 +24,7 @@ export default function RootLayout({ children }) {
           <Navbar/>
         </div>
         {children}
+        <Footer/>
       </body>
     </html>
   );

@@ -16,7 +16,7 @@ export default async function page(){
     const response = await apiCall()
     const articleData = response.message
     return(
-        <div className="bg-coal flex flex-col items-center justify-center">
+        <div className="bg-coal flex flex-col items-center justify-center pb-16">
             <div 
                 className="relative h-screen w-screen bg-cover bg-no-repeat justify-center" 
                 style={{
